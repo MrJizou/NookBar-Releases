@@ -72,7 +72,6 @@ NookBar sits at the top center of the screen and comes in two styles: **Island**
 <p align="center">
   <img src="docs/images/en/ayarlar-medya.png" alt="Settings: Media" width="760" />
 </p>
-- Browser sources without an artist (e.g. live-stream sites) are not treated as music; the island stays in normal clock mode. Sources that give an artist/channel name, like YouTube, and known music apps are still shown.
 
 ### Discord (optional)
 

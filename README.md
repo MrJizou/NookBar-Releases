@@ -72,7 +72,6 @@ NookBar ekranın üst ortasında durur ve iki biçimde gelir: **Ada** (varsayıl
 <p align="center">
   <img src="docs/images/ayarlar-medya.png" alt="Ayarlar: Medya" width="760" />
 </p>
-- Tarayıcıda sanatçısı olmayan yayınlar (ör. canlı yayın siteleri) müzik sayılmaz; ada normal saat modunda kalır. YouTube gibi sanatçı/kanal adı veren kaynaklar ve bilinen müzik uygulamaları gösterilmeye devam eder.
 
 ### Discord (isteğe bağlı)
 

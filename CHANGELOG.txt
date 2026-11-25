@@ -4,6 +4,12 @@
 En yeni sürüm en üstte. Her yeni sürümde buraya madde eklenir.
 
 --------------------------------
+Sürüm 1.0.13
+--------------------------------
+  - Medya görünümü ve saat 1.0.5'teki davranışa döndü: tarayıcı oturumları sanatçı adı olmasa da gösterilir, canlı
+    yayın ve tarayıcı simgesi filtresi kaldırıldı; boş adada saat solda ve eski boyutunda durur
+
+--------------------------------
 Sürüm 1.0.12
 --------------------------------
   - Güncelleme bildirimi: yeni sürüm çıkınca adada bir kez haber verilir; tepsi menüsünün en üstünde "Yeni sürüm" ve

@@ -4,6 +4,13 @@ NOOKBAR — CHANGELOG
 Newest version at the top. A line is added here with every new version.
 
 --------------------------------
+Version 1.0.13
+--------------------------------
+  - The media view and the clock are back to their 1.0.5 behavior: browser sessions are shown even without an artist
+    name, the live stream and browser icon filters were removed; on the idle island the clock stays on the left at its
+    previous size
+
+--------------------------------
 Version 1.0.12
 --------------------------------
   - Update notification: when a new version is out, the island tells you once; "New version" at the top of the tray
