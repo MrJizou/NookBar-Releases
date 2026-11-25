@@ -4,6 +4,13 @@
 En yeni sürüm en üstte. Her yeni sürümde buraya madde eklenir.
 
 --------------------------------
+Sürüm 1.0.15
+--------------------------------
+  - Oyun modu (varsayılan açık; Ayarlar → Davranış → Gizleme): tam ekran bir oyun açıkken cam görünümü için ekran
+    kopyalanmaz ve Discord kısayol düğmeleri tuş göndermez
+  - README'ye "Oyunlar ve hile önleyiciler" bölümü eklendi
+
+--------------------------------
 Sürüm 1.0.14
 --------------------------------
   - Boştaki ada: Ayarlar → Medya → "Boştayken küçük adada" ile müzik çalmıyorken saat ya da özel yazı gösterilebilir;

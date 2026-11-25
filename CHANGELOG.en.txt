@@ -4,6 +4,13 @@ NOOKBAR — CHANGELOG
 Newest version at the top. A line is added here with every new version.
 
 --------------------------------
+Version 1.0.15
+--------------------------------
+  - Game mode (on by default; Settings → Behavior → Hiding): while a fullscreen game runs, the screen isn't copied for
+    the glass look and the Discord shortcut buttons send no keys
+  - The README has a new "Games and anti-cheat" section
+
+--------------------------------
 Version 1.0.14
 --------------------------------
   - Idle island: Settings → Media → "When idle, on the compact island" shows the clock or your custom text while no
