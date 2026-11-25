@@ -1,0 +1,200 @@
+<div align="center">
+  <p>
+    <a href="README.en.md">English</a> · Türkçe
+  </p>
+  <img src="docs/images/icon.png" alt="NookBar simgesi" width="88" />
+  <h1>NookBar - Windows için Dinamik Ada</h1>
+  <p>
+    NookBar, çalan müziğini, bildirimlerini, sistem bilgilerini ve kablosuz cihazlarının pilini; pano geçmişi ve dosya rafıyla birlikte ekranının üstüne taşıyan bir Windows 10/11 dinamik adasıdır.
+  </p>
+  <p>
+    Ekranın üstünde küçük bir ada olarak bekler, yalnızca ihtiyaç duyduğunda açılır.<br />
+    Hafif, yerel bir Windows uygulaması: üçüncü taraf bağımlılığı yok. <b>Erken erişim</b> — ücretsiz; geri bildirimin çok değerli.
+  </p>
+  <p>
+    <a href="../../releases/latest"><b>İndir</b></a> · <a href="CHANGELOG.txt">Sürüm geçmişi</a> · <a href="../../issues/new/choose">Cihaz desteği iste</a>
+  </p>
+  <p>
+    <img src="docs/images/tanitim.png" alt="NookBar panel turu: Ana, Sözler, Pano, Raf, Sistem, Cihazlar, Bildirimler" width="760" />
+  </p>
+</div>
+
+## Neden NookBar
+
+- **Her şey tek yerde:** Müzik, bildirimler, cihaz pilleri, zamanlayıcı, pano, dosya rafı ve sistem bilgisi ekranın kenarında; ayrı pencere ya da uygulama açmak yok.
+- **Küçük başlar, gerektiğinde açılır:** Üstte durur; üzerine gel, açılır; fareyi çek, kapanır.
+- **Müzik kontrolü:** Çalan parçanın kapağı, gerçek ses spektrumuna göre oynayan çubuklar ve zamanlı şarkı sözleri adada.
+- **Sistem bilgisi:** CPU, RAM, disk ve ağ grafikleri, ses ve parlaklık kaydırıcıları.
+- **Cihaz pilleri:** Kablosuz fare, klavye, kulaklık ve kolların pili; düşük pilde renkli uyarı. Logitech cihazları G HUB'daki adla görünür.
+- **Pano ve dosya rafı:** Kopyaladıklarını tek tıkla yeniden yapıştır; dosyaları adaya sürükleyip istediğin yere bırak.
+- **Tam ekranda rahatsız etmez:** Oyun ve tam ekran videolarda kendiliğinden gizlenir.
+- **Kutudan çıktığı gibi çalışır:** Hesap, API anahtarı ya da ek bir giriş gerekmez.
+- **Yerel Windows uygulaması:** C++ ile yazıldı, kurulum yaklaşık 3 MB; tarayıcı motoru ya da çalışma zamanı yok.
+- **Türkçe ve İngilizce:** Dil Windows'a göre seçilir, Ayarlar'dan değiştirilir.
+
+## Özellikler
+
+### Kapalı biçimler
+
+NookBar ekranın üst ortasında durur ve iki biçimde gelir: **Ada** (varsayılan) ve **Çentik**. Boş yerine çift tıklayınca ince çizgiye iner.
+
+| Ada (varsayılan) | Çentik |
+| :---: | :---: |
+| <img src="docs/images/stil-ada.png" alt="Ada biçimi" width="360" /> | <img src="docs/images/stil-centik.png" alt="Çentik biçimi" width="360" /> |
+| Ekrandan ayrık yüzen kapsül | Ekran kenarına bitişik çentik |
+
+- Kapalıyken çalan parçanın kapağı, ses çubukları ya da zamanlı söz satırı (sözler 2, 3 veya 4 kelimelik öbeklerle) görünür. Müzik çalmıyorsa saat kapsülün ortasında durur.
+- Solda zamanlayıcı halkası, sağda okunmamış bildirim sayacı, indirme göstergesi ve pil kapsülü çıkar.
+- 8 konum: üst, alt, köşeler ve sol/sağ kenar (kenarlarda dikey kapsül); çoklu ekran ve DPI desteği.
+- Hızlı ses ayarı: kapalı adanın üzerinde fare tekerleği.
+
+### Müzik
+
+<p align="center">
+  <img src="docs/images/panel-sozler.png" alt="Sözler sekmesi" width="760" />
+</p>
+
+- Çalan parça, kapak, ilerleme çubuğu, oynat/duraklat/atla kontrolleri.
+- **Gerçek ses spektrumu:** çubuklar sistem sesinden 16 frekans bandıyla çalışır (bas solda, tiz sağda); ses yakalanamazsa animasyona döner.
+- Zamanlı şarkı sözleri: küçük adada, müzik kartındaki söz çarkında ve Sözler sekmesinde; satıra tıklayınca şarkı oraya atlar.
+- Tarayıcıda sanatçısı olmayan yayınlar (ör. canlı yayın siteleri) müzik sayılmaz; ada normal saat modunda kalır. YouTube gibi sanatçı/kanal adı veren kaynaklar ve bilinen müzik uygulamaları gösterilmeye devam eder.
+
+### Sistem
+
+<p align="center">
+  <img src="docs/images/panel-sistem.png" alt="Sistem sekmesi" width="760" />
+</p>
+
+- CPU, RAM, disk ve ağ grafikleri; tüm sürücüler için depolama çubukları.
+- Ses ve parlaklık kaydırıcıları, ses çıkışı seçimi, kilitle/uyut/ekran görüntüsü gibi hızlı işlemler.
+- MP4 ekran kaydı (ekran + sistem sesi/mikrofon), duraklatma, kayıt listesi.
+
+### Kablosuz cihaz pilleri
+
+<p align="center">
+  <img src="docs/images/panel-cihazlar.png" alt="Cihazlar sekmesi" width="760" />
+</p>
+
+<p align="center">
+  <img src="docs/images/ayarlar-cihazlar.png" alt="Ayarlar: Cihazlar ve pil halkaları" width="760" />
+</p>
+
+- Fare, klavye, kulaklık ve kollar; Logitech cihazları G HUB'daki adla ("PRO X SUPERLIGHT") gösterilir.
+- Bağlanma, şarj ya da %20 altına düşüşte pil kapsülü 4 saniye görünür; düşük pil şarja takılana kadar kalır.
+- İstersen kapalı adada pil halkaları; hangi cihazların halka alacağını ve yerleşimi Ayarlar → Cihazlar'dan seç.
+- Pil bilgisi yalnızca okuma sorgularıyla alınır; cihaza hiçbir ayar ya da sıfırlama komutu gönderilmez. [Desteklenen cihazlar](#desteklenen-kablosuz-cihazlar)
+
+### Pano ve dosya rafı
+
+<p align="center">
+  <img src="docs/images/panel-pano.png" alt="Pano sekmesi" width="760" />
+</p>
+
+<p align="center">
+  <img src="docs/images/panel-raf.png" alt="Dosya rafı sekmesi" width="760" />
+</p>
+
+- **Pano:** metin, görsel ve dosyalar yalnızca bellekte tutulur; tıkla yeniden kopyala, sürükle başka pencereye bırak, yıldızla sabitle.
+- Parola, API anahtarı ve doğrulama kodu gibi görünen metinler `•••` ile maskelenir; yayın/kayıt uygulaması çalışırken pano kendiliğinden gizlenir.
+- **Dosya rafı:** dosyaları adaya bırak, sonra istediğin yere sürükle; sağ tık: Aç, Klasörde göster, Kopyala, Paylaş, Kaldır. Dosyalar kopyalanmaz, yalnızca yolları tutulur.
+
+### Bildirimler ve indirmeler
+
+<p align="center">
+  <img src="docs/images/panel-bildirimler.png" alt="Bildirimler sekmesi" width="760" />
+</p>
+
+- Windows bildirimleri öncelikli kuyrukla sırayla gösterilir; aynı uygulamanın bildirimleri tek kartta toplanır.
+- Alarm, hatırlatma ve süre dolumu öne geçer; bekleyenler `+N` rozetiyle sayılır.
+- Tarayıcı ve Internet Download Manager indirmeleri adanın sağında ad ve hızla görünür; İndirmeler sekmesinde geçmişi tutulur.
+
+### Araçlar
+
+<p align="center">
+  <img src="docs/images/panel-ana.png" alt="Ana sayfa: müzik ve hava durumu" width="760" />
+</p>
+
+- Zamanlayıcı (süre, kronometre, alarm), pomodoro, hatırlatmalı ajanda ve notlar, yapılacaklar, dünya saati.
+- Ana sayfada sürüklenebilir 3B dünya küresi ve hava durumu.
+
+### Temalar ve görünüm
+
+<p align="center">
+  <img src="docs/images/ayarlar-gorunum.png" alt="Ayarlar: Görünüm, tema ve renkler" width="760" />
+</p>
+
+- 14 yerleşik tema, özel arka plan/yazı/vurgu renkleri.
+- **Liquid Glass** cam efekti (arkadaki ekranı bulandırıp kırar), sıvı geçiş efekti, kapak renginden ışık.
+- Ada boyutu, köşe yuvarlaklığı ve animasyon süresi ayarlanabilir.
+
+### Daha fazla ayar
+
+- **Kısayollar:** `Ctrl + Alt + D` adayı gösterir/gizler; `Ctrl + Alt + Boşluk` paneli açar/kapatır; açıkken ←/→ sekme değiştirir, `Esc` kapatır. Ayarlar penceresi Tab/ok/Boşluk ile klavyeyle de kullanılır.
+- **Açılma biçimi:** fareyle üzerine gelince ya da tıklayınca; imleci takip eden ekranda gösterme; yalnızca kenara gidince beliren mod.
+- **Gizleme:** tam ekranda ve büyütülmüş pencerede gizle; çift tıkla ince çizgiye indir.
+- **Ekran paylaşımı:** ada Discord/OBS/Teams'te görünür; istersen paylaşım ve kayıtlarda gizle.
+- **Dil:** Ayarlar → Genel → Dil (Otomatik, Türkçe, English), tepsi menüsü ya da ilk kurulum.
+- **Sekme düzeni:** üst menüdeki sekmeleri sürükleyerek sırala, kullanmadıklarını kutuya bırakıp gizle.
+
+## Desteklenen kablosuz cihazlar
+
+| Marka / aile | Bağlantı |
+|---|---|
+| Logitech (fare, klavye, G kulaklıklar) | G HUB açıksa ondan, değilse HID++ ile doğrudan |
+| Razer (BlackShark V3 / V3 Pro dahil), SteelSeries, Corsair, HyperX, ASUS ROG | 2.4 GHz alıcı / kablo |
+| Sony INZONE, Jabra, JBL Quantum, Fractal Scape, MOONDROP | 2.4 GHz alıcı |
+| AirPods / Beats, Samsung Galaxy Buds | Bluetooth |
+| Glorious, LAMZU, G-Wolves, Hitscan, WLMouse, Pulsar, ATK/VXE, Endgame Gear, ZOWIE, VAXEE, Ninjutso | 2.4 GHz alıcı / kablo |
+| Akko ve Rongyuan tabanlı alıcılar, AJAZZ, AULA, MCHOSE, Keychron, Rapoo, Redragon, Delux, Attack Shark | 2.4 GHz alıcı |
+| PlayStation (DS4 / DualSense), Xbox, GameSir, Flydigi, Steam Controller | USB / Bluetooth / alıcı |
+| Standart HID pil bilgisi veren cihazlar, Android telefon (Bağlantılı Telefon) | — |
+
+Tam liste ve protokol kaynakları: [KAYNAKLAR.md](docs/KAYNAKLAR.md). Cihazın görünmüyorsa [cihaz desteği isteği](../../issues/new/choose) aç.
+
+## Kurulum
+
+Windows 10 ve 11 (x64) gerekir.
+
+1. [Releases](../../releases/latest) sayfasından `NookBar-Setup-<sürüm>.exe` dosyasını indir ve çalıştır.
+   - Yönetici izni gerekmez; `%LOCALAPPDATA%\Programs\NookBar` altına kurulur.
+   - Ayarların ve notların `%APPDATA%\DinamikAdaNative` klasöründe tutulur (eski adın uyumluluğu için).
+2. Windows "Bilinmeyen yayımcı" uyarısı gösterirse **Ek bilgi → Yine de çalıştır** seç. Uygulama henüz kod imzalı değil.
+3. **Akıllı Uygulama Denetimi** (Windows Güvenliği → Uygulama ve tarayıcı denetimi) açıksa imzasız uygulamalar engellenebilir.
+4. İlk açılışta kısa bir sihirbaz dili, konumu, görünümü ve ana sayfayı sorar.
+
+## Hızlı başlangıç
+
+1. NookBar ekranın üst ortasında küçük bir ada olarak açılır.
+2. Fareyi adanın üzerine getir: panel açılır. Çekince kapanır.
+3. Üstteki ikonlardan sekme değiştir (ya da üzerlerinde fare tekerleğini çevir); ana sayfada kartlar sayfa sayfa gezilir.
+4. Ayarlar: panelin üstündeki dişli ya da görev çubuğu simgesi. Tüm ipuçları: Ayarlar → Hakkında → Nasıl kullanılır.
+
+## Kaldırma
+
+Windows Ayarları → Uygulamalar → NookBar → Kaldır. Kaldırıcıda "Ayarlarımı ve notlarımı da sil" kutusunu işaretlersen `%APPDATA%\DinamikAdaNative` de silinir.
+
+## Gizlilik
+
+- Pano geçmişi ve bildirimler yalnızca bellekte tutulur, uygulama kapanınca silinir. Yayın/kayıt sırasında pano kendiliğinden gizlenir.
+- Ağ yalnızca açtığın özellikler için kullanılır: şarkı sözleri (LRCLIB), hava durumu (Open-Meteo). Telemetri yok.
+- Kablosuz cihaz pilleri bilgisayarın içinde okunur; G HUB bağlantısında karşı tarafın gerçekten G HUB olduğu doğrulanır.
+
+## Sorun giderme
+
+**Cihazımın pili görünmüyor.** Modeli [desteklenen cihazlar](#desteklenen-kablosuz-cihazlar) listesinde ara. Yoksa `DINAMIKADA_BATLOG=1` ortam değişkeniyle başlatıp oluşan `%TEMP%\dinamikada_battery.txt` dosyasını bir cihaz desteği isteğine ekle.
+
+**Ada Discord / OBS'te görünüyor.** Varsayılan böyle. Gizlemek için Ayarlar → Bildirimler ve gizlilik → "Ekran paylaşımında ve kayıtlarda gizle".
+
+**Ses çubukları oynamıyor.** Çubuklar Windows'un çaldığı sistem sesine göre çalışır; ses yakalanamazsa animasyona döner. Ayrıca Windows'un Erişilebilirlik → Görsel efektler → Animasyon efektleri ayarına bak.
+
+**Dili nasıl değiştiririm.** Ayarlar → Genel → Dil ya da tepsi simgesine sağ tık → Dil.
+
+**Uygulama açılmıyor / engelleniyor.** Akıllı Uygulama Denetimi imzasız uygulamaları engelleyebilir; [Kurulum](#kurulum) bölümüne bak.
+
+## Geri bildirim
+
+NookBar erken erişim aşamasında. Hataları ve özellik önerilerini [Issues](../../issues) üzerinden bildirebilirsin; cihaz desteği için model ve bağlantı türünü ekle. Bu depo yalnızca kurulum dosyalarını ve belgeleri barındırır.
+
+## Lisans
+
+Telif hakkı © 2026 NookBar. Tüm hakları saklıdır. Ayrıntılar: [LICENSE](LICENSE). Harita verisi Natural Earth (kamu malı); kablosuz cihaz protokol kaynakları [KAYNAKLAR.md](docs/KAYNAKLAR.md) dosyasında.

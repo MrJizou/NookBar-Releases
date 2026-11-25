@@ -1,0 +1,10 @@
+# Betikler her zaman CRLF (cmd.exe LF ile sorun çıkarabilir)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.rc text eol=crlf
+
+# İkili dosyalar
+*.bin binary
+*.png binary
+*.ico binary
+*.exe binary

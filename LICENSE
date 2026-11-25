@@ -1,0 +1,30 @@
+NookBar
+Telif hakkı (c) 2026 NookBar. Tüm hakları saklıdır.
+
+Bu yazılım ve kaynak kodu (bu depodaki tüm dosyalar) telif hakkı sahibinin mülküdür.
+
+İzin verilenler:
+  - Telif hakkı sahibinin dağıttığı derlenmiş uygulamayı (kurulum paketini) kişisel bilgisayarınızda
+    kurmak, kullanmak ve test etmek.
+
+Telif hakkı sahibinin yazılı izni olmadan yasak olanlar:
+  - Kaynak kodu ya da derlenmiş uygulamayı kopyalamak, yeniden dağıtmak, yayımlamak, satmak, kiralamak
+    ya da alt lisanslamak.
+  - Yazılımı değiştirmek, türev çalışmalar oluşturmak, tersine mühendislik uygulamak (yürürlükteki yasanın
+    açıkça izin verdiği ölçü dışında).
+  - Telif hakkı ve lisans bildirimlerini kaldırmak.
+
+Yazılım "OLDUĞU GİBİ" sağlanır; açık ya da örtülü hiçbir garanti verilmez. Telif hakkı sahibi, yazılımın
+kullanımından doğan hiçbir zarardan sorumlu tutulamaz.
+
+Üçüncü taraf bileşenler:
+  - Harita verisi (resources/geodata.bin) Natural Earth verisinden üretilmiştir (kamu malı).
+  - Kablosuz cihaz protokollerine dair bilgiler docs/KAYNAKLAR.md'de listelenen topluluk projelerinden öğrenilmiştir;
+    bu projelerden kod kopyalanmamıştır.
+
+---
+
+Copyright (c) 2026 NookBar. All rights reserved.
+This software is proprietary. You may install and use the binaries distributed by the copyright holder on your own
+computer. Copying, redistribution, sale, modification or derivative works require prior written permission.
+The software is provided "AS IS", without warranty of any kind.

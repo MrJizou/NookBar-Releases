@@ -1,0 +1,148 @@
+﻿NOOKBAR — DEĞİŞİKLİK GÜNLÜĞÜ
+================================
+
+En yeni sürüm en üstte. Her yeni sürümde buraya madde eklenir.
+
+--------------------------------
+Sürüm 1.0.9
+--------------------------------
+  - Discord çağrı kontrolü artık hazır bir uygulama kimliğiyle gelmiyor: Discord yerel bağlantıya yalnızca uygulama
+    sahibinin hesabında izin verdiği için kendi Discord uygulamanı oluşturup Client ID'sini Ayarlar → Medya → Discord'a
+    yazman gerekir (açıklama ayar ekranında). ID girilmeden Discord'a bağlanılmaz, bir kez uyarı gösterilir
+
+--------------------------------
+Sürüm 1.0.8
+--------------------------------
+  - Ayarlar penceresi yenilendi: vurgu rengine bağlı kategori simgeleri, açıklamalı bölüm başlıkları, az seçenekli
+    ayarlar için segmentli seçim, küçük ekran maketi üzerinde konum seçici ve sol menüde arama (Ctrl+F; tüm ayarlar
+    arasında sözcük başı eşleşmesi, sonuçlar canlı satırlar olarak gösterilir)
+  - Kapalı müzik göstergesi: ince çentik / ada kapsülü (çentik 29, ada 30 px yükseklik); solda albüm kapağı (ya da
+    uygulama simgesi), sözler varken yalnızca söz, sözler yokken ses noktaları ya da çubuklar. Genişlik çalan söz
+    öbeğine uyar. Sözler arasındaki ritim/enstrümantal boşlukta noktalar görünür, söz yeniden girince söz gelir
+  - Şarkı sözleri: öbekler hece sayısına göre dengeli bölünür (tek kelimelik artık kalmaz), çalan satır şarkıyla
+    soldan sağa dolar, ses (vokal bandı) ile satır içi hizalama ve şarkı başına öğrenilen düzeltmeler (yerel
+    önbellek), Ayarlar → Medya'da söz kaydırma. Varsayılan kelime öbeği 4
+  - Müzik kartı: kapak renginden türeyen vurgu (düğmeler, ilerleme çubuğu), geniş kartta kapak/ad/kontroller solda ve
+    söz çarkı sağda, uzun başlıklar kayar, 1 saati aşan içerikte süre s:dd:ss, kapak yoksa çalan uygulamanın simgesi
+  - Ctrl+Alt+D ile gizlerken ve gösterirken su damlası animasyonu (Ayarlar → Görünüm → Cam ve hareket'ten kapatılır)
+  - Liquid Glass daha belirgin (kapalı gösterge, panel ve bildirim kartları)
+  - Erişilebilirlik: Windows "Saydamlık efektleri" kapalıyken ya da Yüksek Karşıtlık açıkken opak gövde; Windows
+    animasyon efektleri kapalıyken yaylı geçişler en hızlı değere sabitlenir, damla animasyonu ve söz dolumu kapanır
+  - Discord çağrı kontrolü (isteğe bağlı, varsayılan kapalı): çağrıda mikrofon/kulaklık düğmeleri, konuşan kişi, ekran
+    paylaşımı ve kamera kısayolları. Kendi Discord uygulamanın Client ID'sini Ayarlar → Medya → Discord'a yazman gerekir
+
+--------------------------------
+Sürüm 1.0.7
+--------------------------------
+  - Razer BlackShark V3 / V3 Pro (2.4 GHz alıcı, 1532:057A ve 0577): pil yüzdesi ve şarj durumu gösterilir.
+    Kulaklık sürekli sorgulanırsa bağlantısı sıfırlandığı için pil yalnızca bağlanınca ve 5 dakikada bir sorulur,
+    arada son değer gösterilir
+
+--------------------------------
+Sürüm 1.0.6
+--------------------------------
+  - Ada boşta kaldığında saat ortalanır ve yazısı hafif büyütülür. Müzik kapanınca saat yay animasyonuyla ortaya kayar;
+    pil, zamanlayıcı veya gizlilik noktaları görünürken diğer içeriğe yer bırakır. Saatin görünen rakamları
+    dikeyde de ortalanır (fontun aşağı kaymasını gidermek için 1 piksel yukarı alınır)
+  - Chrome, Edge, Firefox, Brave, Opera ve Vivaldi oturumlarında sanatçı boşsa ada normal saat modunda kalır.
+    Kick gibi Music türüyle yanlış etiketlenen canlı yayınlar artık medya görünümünü açık tutmaz.
+    "Watch Live on KICK" başlıklı yayınlar, sanatçı dolu veya tarayıcı kimliği tanınmıyor olsa da gizlenir.
+    YouTube gibi sanatçı/kanal adı veren kaynaklar ve bilinen müzik uygulamaları gösterilmeye devam eder
+  - Kapak yoksa veya tarayıcının uygulama simgesiyle eşleşiyorsa nota simgesi gösterilir; gizlenen oturumun
+    eski kapağı ve şarkı sözleri temizlenir
+
+--------------------------------
+Sürüm 1.0.5
+--------------------------------
+  - Müzik kartındaki kalp ve Favoriler kartı kaldırıldı (Spotify bağlantısı olmadan işe yaramıyordu). Ayarlarda
+    Favoriler kartı seçeneği de kalktı
+
+--------------------------------
+Sürüm 1.0.4
+--------------------------------
+  - Spotify beğeni bağlantısı kaldırıldı (Ayarlar → Medya → Spotify bölümü, Client ID, "Spotify'a bağlan"). Spotify,
+    başkalarının hesabına yazan uygulamalara sıkı kullanıcı ve şirket sınırları getirdiği için bu özellik herkes için
+    çalışamıyordu. Kalp artık yalnızca favoriler listesine ekler (yalnızca bu bilgisayarda tutulur)
+
+--------------------------------
+Sürüm 1.0.3
+--------------------------------
+  - Spotify beğenisi: kalbe basınca sonuç artık panel açıkken de görünür. Panelin altında kısa bir şerit çıkar
+    (yeşil: eklendi / çıkarıldı, kırmızı: hata ve sebebi, bağlı değilse nasıl bağlanılacağı). Önceden panel açıkken
+    küçük bildirimler hiç gösterilmediği için hata olsa bile hiçbir şey görünmüyordu
+
+--------------------------------
+Sürüm 1.0.2
+--------------------------------
+  - Arayüz dili seçeneği: Türkçe ve İngilizce. Ayarlar → Genel → Dil (Otomatik = Windows dili; Türkçe değilse
+    İngilizce), tepsi menüsü → Dil ve kurulumun ilk adımından seçilir. Ada, menüler, ayarlar, yardım, bildirimler,
+    tarih ve yüzde yazımı (%85 / 85%) dile göre değişir; kurulum paketi de Windows diline göre açılır
+  - Ses çubukları gerçek bir ses spektrumu gösterir: 16 frekans bandı (FFT), rastgele titreşim yok; bas solda, tiz sağda
+  - Yardım ve kurulumdaki ayar yolları güncellendi; kayıt görünürlüğü açıklaması düzeltildi
+  - Başlatma hatası İngilizce dil seçimini izler
+  - Türkçe ve İngilizce README, BrimDeck üst düzenine uyarlandı; özel depoda sürüm rozeti düzeltildi
+  - Logitech cihaz adları G HUB kartlarıyla eşleşir; cihaz türü ekleri arayüzde gizlenir
+
+--------------------------------
+Sürüm 1.0.1
+--------------------------------
+  - Yeni ad: NookBar (eski adı Dinamik Ada). Ayarların ve notların korunur; eski adla kurulmuş sürüm,
+    yeni kurulum sırasında kendiliğinden kaldırılır
+  - Yeni uygulama simgesi; bildirim alanı simgesi açık ve koyu görev çubuğunda görünür, ekran ölçeğine göre keskin
+  - Kurulum dosyası artık NookBar-Setup-<sürüm>.exe; kayıtların varsayılan klasörü Videolar\NookBar
+  - Ada artık ekran paylaşımında (Discord, OBS, Teams), kayıtlarda ve ekran görüntülerinde görünür; istersen
+    Ayarlar → Bildirimler ve gizlilik → "Ekran paylaşımında ve kayıtlarda gizle" ile gizleyebilirsin
+
+--------------------------------
+Sürüm 1.0.0  (ilk sürüm)
+--------------------------------
+Eski Electron uygulamasının (0.1.1) C++ ile sıfırdan yeniden yazımı.
+Daha hızlı açılır, daha az bellek ve işlemci kullanır.
+
+  - Üstte şeffaf kapsül ada; 8 konum, çoklu ekran, yay animasyonu
+  - Şu an çalan müzik, şarkı sözleri, kontroller
+  - Kapalı ada küçüldü (yatay: yükseklik 34→28, genişlik ≈%15 dar; kapak, çubuklar ve yazı buna göre ölçeklendi)
+  - Kapalı ada iPhone Dynamic Island ölçüsünde (yatay: 126 x 37; bildirim kartı 371 x 84)
+  - Ses çubukları Apple tarzı: 10 ince beyaz çubuk, ortası yüksek; otomatik kazanç sayesinde kısık müzikte de oynar
+  - Ağ istekleri toplam 30 sn ve 4 MB ile sınırlı; Not Defteri System32'den tam yolla açılır
+  - Güvenlik sertleştirmesi: Control Flow Guard, CET, DLL'ler yalnızca System32'den yüklenir; JSON derinlik sınırı; Spotify Client ID doğrulaması; jeton taşıyan isteklerde yönlendirme kapalı; yalnızca TLS 1.2+
+  - Üst menü özelleştirme: sekme ikonuna basılı tutup kaydırarak sırala; kullanmadıklarını sağ uçtaki kutu ikonuna bırakıp gizle, kutuya tıklayınca gizli sekmeler açılır, birine basınca sekme kutunun altında küçük bir açılır pencere (popup) olarak açılır; içerik pencereye sığacak şekilde otomatik ölçeklenir (aynısına tekrar basınca kapanır); geri yerleştirmek için ikonu menüye sürükle (Ana sayfa hep kalır)
+  - Ana sayfadaki müzik kartında Spotify tarzı söz çarkı: tekerlek/sürükleme ile satırlar kayar, satıra tıklayınca şarkı oraya atlar
+  - Zamanlayıcı, krono, pomodoro, alarm
+  - Pano geçmişi ve dosya rafı (sürükle-bırak)
+  - Sistem sekmesi: CPU/RAM/disk/ağ, ses ve parlaklık, ses çıkışı seçimi
+  - Ana sayfa kartları, ajanda, notlar, takvim, hatırlatmalar
+  - Bluetooth cihazları, Windows bildirimleri
+  - Kablosuz cihaz pilleri: Cihazlar sekmesinde pil yüzdesi ve şarj durumu. Desteklenenler: Logitech (alıcılı fare/klavye, G kulaklıklar), Razer, SteelSeries (Arctis, Nova, Aerox, Rival), Corsair (Void, Virtuoso, HS80, Slipstream), HyperX (Cloud II/III/Alpha/Flight), Sony INZONE, AirPods/Beats, Galaxy Buds, Glorious, LAMZU, G-Wolves, Hitscan, WLMouse, Pulsar, ATK/VXE, Redragon, Akko ve Rongyuan tabanlı 2.4G alıcılar, Endgame Gear, ZOWIE, ASUS ROG (Omni alıcısı, Pelta), Keychron, AJAZZ/AULA (SONiX), Rapoo, MCHOSE, Ninjutso, DAREU, AULA klavyeler, Cooler Master, Fractal Scape, Jabra, GameSir, Flydigi, Steam Controller, Fantech, JBL Quantum, MOONDROP, Royal Kludge, Sprime, VAXEE, Motospeed, Delux, Attack Shark, AJAZZ fareleri, Wraith, Incott, ATK/VXE NK ve N9 kulaklıklar, Logitech G435, PlayStation ve Xbox kolları, Android telefon (Bağlantılı Telefon), standart HID pil bilgisi veren cihazlar. G HUB açıksa Logitech yüzdeleri doğrudan G HUB'dan alınır. Uykudaki cihazın son değeri soluk ve "Son görülme: N dk önce" olarak gösterilir
+  - Kapalı adada pil halkaları: Ayarlar → Pil halkaları'ndan seçilen en çok 3 kablosuz cihazın pili, müzik çalmıyorken saatin yanında yuvarlak halka olarak görünür (şarjda yeşil, %20 altında kırmızı)
+  - Mikrofon/kamera kullanım noktaları
+  - Ekran kaydı (sistem sesi ve mikrofon destekli, MP4)
+  - Sol/sağ kenarda dikey kapsül
+  - Küçük adada sistem sesine tepki veren ses çubukları
+  - 14 tema, cam efekti (bulanıklık + kırılma), tepsi menüsünden hızlı ayarlar
+  - Kapalı adada tekerlekle ses ayarı; Ctrl+Alt+Boşluk ile panel aç/kapat; ok tuşlarıyla sekme geçişi, Esc ile kapatma
+  - Etkinlik uçları: zamanlayıcı halkası ve bildirim sayacı kapalı adanın yanında belirir
+  - İndirme göstergesi: tarayıcı indirmesi sürerken ad ve hız, bitince bildirim
+  - Bildirim kuyruğu: kartlar sırayla gösterilir, bekleyenler +N rozetiyle sayılır; alarm ve hatırlatma öne geçer
+  - Rafta sağ tık → Paylaş (Windows paylaşma penceresi); çift tıklayınca dosya açılır
+  - Medya favorileri: müzik kartında kalp, ana sayfada Favoriler kartı
+  - Sürüklenebilir zamanlayıcı halkası (60 dk = tam tur, tekerlekle de ayarlanır)
+  - "Şimdi" kartı (saat, tarih, hafta numarası, bugünün notu); Windows ile başlatma 10 sn gecikmeli
+  - Akıcı animasyonlar (120 kare/sn); daha belirgin cam görünümü; Sistem sekmesinde tüm sürücüler
+  - Internet Download Manager indirmeleri de gösterilir; zamanlayıcıya yazarak süre girilebilir; sekme geçişlerinde sıvı dalga animasyonu
+  - Spotify beğenisi: kalp, Spotify'ın Beğenilen Şarkılar listesine de ekler (Ayarlar → Spotify)
+  - Dünya küresi: sürükleyerek döner, tekerlekle yakınlaşınca şehirler belirir, ülke/şehre tıklayınca hava durumu, yazarak arama, bırakınca bulunduğun yere döner
+  - Dünya küresi oku: kapalıyken yalnızca hava durumu; ok küreyi sola açar, müzik ince şeride iner, tekrar basınca küre tamamen kapanır
+  - İndirmeler sekmesi: inen dosyanın adı, boyutu, hızı ve indirme geçmişi (göstergeye tıklayınca açılır)
+  - Pano geçmişinde parola/API anahtarı/doğrulama kodu gibi görünen kopyalar gizlenir (göz düğmesiyle 8 sn gösterilir)
+  - Pano "Gizle" düğmesi; yayın/kayıt sürerken pano kendiliğinden gizlenir, gösterirken uyarı verir, kayıt dışı ekranda uyarısız açılır
+  - Ayarlar penceresi: tüm ayarlar tek yerde (dişli simgesi ya da tepsi menüsü); sol menüden kategoriler (Genel, Görünüm, Davranış, Medya, Cihazlar, Bildirimler ve gizlilik, Ana sayfa ve sekmeler, Ekran kaydı, Hakkında), Ctrl+Tab ile geçiş
+  - Şarkı duraklatılınca küçük adadaki söz kaybolur
+  - Seçili cihazların pili adanın sağında ayrı bir kapsülde, cihaz simgeleriyle görünür (tıklayınca Cihazlar açılır)
+  - Yan kapsüller (zamanlayıcı, bildirim, indirme, pil) ve saat sekmesi de Liquid Glass cam görünümünde
+  - Pil göstergesi varsayılan olarak olaylarda: cihaz bağlanınca, şarja takılıp çıkarılınca ya da %20 altına düşünce 4 saniye görünür; pili düşük cihaz şarja takılana kadar adada kalır ("Her zaman göster" seçilebilir)
+  - "Medya çalmıyorken pilleri adaya taşı" ayarı: müzik yokken halkalar adanın içine geçer, saat adanın altındaki küçük sekmeye iner
+  - İlk açılışta 5 adımlı kurulum ve "Nasıl kullanılır" sayfası
+  - Tepsi menüsünde "Değişiklik günlüğü" ile bu dosya açılır
+
+

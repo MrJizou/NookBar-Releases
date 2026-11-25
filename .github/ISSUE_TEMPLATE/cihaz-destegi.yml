@@ -1,0 +1,63 @@
+name: Kablosuz cihaz desteği
+description: Cihazın pili görünmüyor ya da yanlış görünüyor
+title: "[Cihaz] "
+labels: ["cihaz-desteği"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Pil okuma kodu her marka için ayrıdır ve çoğu cihaz geliştiricinin elinde yoktur. Aşağıdaki kayıt,
+        sorunun hızla bulunmasını sağlar.
+
+        **Pil kaydını alma:** NookBar'ı tepsi simgesinden kapat, sonra PowerShell'de şunu çalıştır:
+
+        ```powershell
+        $env:DINAMIKADA_BATLOG = 1; & "$env:LOCALAPPDATA\Programs\NookBar\NookBar.exe"
+        ```
+
+        1 dakika bekle ve `%TEMP%\dinamikada_battery.txt` dosyasının içeriğini aşağıya yapıştır.
+  - type: input
+    id: cihaz
+    attributes:
+      label: Cihaz
+      description: Marka ve tam model adı
+      placeholder: "Razer DeathAdder V3 Pro"
+    validations:
+      required: true
+  - type: dropdown
+    id: baglanti
+    attributes:
+      label: Bağlantı
+      options:
+        - 2.4 GHz alıcı (dongle)
+        - Bluetooth
+        - USB kablo
+    validations:
+      required: true
+  - type: dropdown
+    id: durum
+    attributes:
+      label: Ne oluyor?
+      options:
+        - Cihaz hiç görünmüyor
+        - Yüzde yanlış
+        - Şarj durumu yanlış
+        - Değer güncellenmiyor
+    validations:
+      required: true
+  - type: input
+    id: dogru-deger
+    attributes:
+      label: Üreticinin uygulamasında görünen yüzde
+      description: Örn. Razer Synapse, G HUB, iCUE, SteelSeries GG; aynı anda bakılan değer
+      placeholder: "%82"
+  - type: textarea
+    id: kayit
+    attributes:
+      label: Pil kaydı (dinamikada_battery.txt)
+      render: text
+  - type: textarea
+    id: ek
+    attributes:
+      label: Eklemek istediğin başka bir şey
+      description: Üretici uygulaması açık mıydı? Cihaz uykuda mıydı?
