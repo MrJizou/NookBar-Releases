@@ -210,6 +210,17 @@ Windows Ayarları → Uygulamalar → NookBar → Kaldır. Kaldırıcıda "Ayarl
 - Discord oturum bilgisi Windows'un kullanıcıya özel şifrelemesiyle (DPAPI) saklanır; NookBar yalnızca gerçekten Discord olan yerel bağlantıya bağlanır.
 - Kablosuz cihaz pilleri bilgisayarın içinde okunur; G HUB bağlantısında karşı tarafın gerçekten G HUB olduğu doğrulanır.
 
+## Oyunlar ve hile önleyiciler
+
+NookBar oyunların yanında güvenle çalışacak şekilde yazıldı, ama hiçbir hile önleyici (anti-cheat) bir programı resmî olarak "güvenli" ilan etmez; bu yüzden kesin bir garanti verilemez. Bilmen gerekenler:
+
+- **Oyuna dokunmaz.** Oyunun içine kod enjekte etmez, belleğini okumaz ya da değiştirmez, çekirdek sürücüsü kurmaz. Ada oyunun üstünde ayrı bir pencere olarak çizilir (Discord ve Steam katmanları gibi oyunun içine girmez).
+- **Girdiye karışmaz.** Fare/klavye kancası, makro ya da otomatik tıklama yoktur. Tek yapay tuş basma, Discord kısayol düğmelerindedir ve yalnızca Discord öndeyken gönderilir.
+- **Oyun modu (varsayılan açık):** tam ekran bir oyun açıkken cam görünümü için ekran kopyalanmaz ve Discord'a tuş gönderilmez. Ayarlar → Davranış → Gizleme → Oyun modu.
+- **Tam ekranda gizle (varsayılan açık):** oyun sırasında ada tamamen kaybolur.
+- Pil bilgisi kulaklık ve farelerden, üretici programlarının da kullandığı yolla (HID) okunur.
+- NookBar'ın kod imzası henüz yok. Çekirdek düzeyindeki sıkı sistemler (Vanguard, FACEIT gibi) imzasız programların oyun üstünde çizilmesini engelleyebilir; bu bir ban değildir, ada yalnızca görünmez. Temkinli olmak istersen rekabetçi maçlardan önce NookBar'ı tepsi menüsünden kapatabilirsin.
+
 ## Sorun giderme
 
 **Cihazımın pili görünmüyor.** Modeli [desteklenen cihazlar](#desteklenen-kablosuz-cihazlar) listesinde ara. Yoksa `DINAMIKADA_BATLOG=1` ortam değişkeniyle başlatıp oluşan `%TEMP%\dinamikada_battery.txt` dosyasını bir cihaz desteği isteğine ekle.

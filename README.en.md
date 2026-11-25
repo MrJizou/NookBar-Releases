@@ -210,6 +210,17 @@ Windows Settings → Apps → NookBar → Uninstall. If you tick "Also delete my
 - The Discord session is stored with Windows' per-user encryption (DPAPI); NookBar only connects to a local endpoint that really is Discord.
 - Wireless device batteries are read on your computer; for G HUB the other end is verified to really be G HUB.
 
+## Games and anti-cheat
+
+NookBar is written to run safely next to games, but no anti-cheat officially declares a program "safe", so no absolute guarantee can be given. What you should know:
+
+- **It doesn't touch the game.** It doesn't inject code into the game, doesn't read or change its memory and installs no kernel driver. The island is drawn as a separate window on top (it doesn't go inside the game like the Discord and Steam overlays).
+- **It doesn't interfere with input.** No mouse/keyboard hooks, macros or auto-clicking. The only synthetic key press is for the Discord shortcut buttons, and it is sent only while Discord is in front.
+- **Game mode (on by default):** while a fullscreen game runs, the screen isn't copied for the glass look and no keys are sent to Discord. Settings → Behavior → Hiding → Game mode.
+- **Hide in fullscreen (on by default):** the island disappears completely while you play.
+- Battery levels are read from headsets and mice the same way vendor apps do (HID).
+- NookBar isn't code-signed yet. Strict kernel-level systems (such as Vanguard or FACEIT) may stop unsigned programs from drawing over the game; that isn't a ban, the island just doesn't show. If you want to be careful, quit NookBar from the tray menu before competitive matches.
+
 ## Troubleshooting
 
 **My device's battery doesn't show.** Look for the model in the [supported devices](#supported-wireless-devices) list. If it's missing, start with the `DINAMIKADA_BATLOG=1` environment variable and attach the resulting `%TEMP%\dinamikada_battery.txt` to a device support request.
