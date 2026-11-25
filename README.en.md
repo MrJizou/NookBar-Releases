@@ -161,6 +161,7 @@ NookBar sits at the top center of the screen and comes in two styles: **Island**
 - **Open mode:** on hover or on click; follow the screen the cursor is on; a reveal-on-edge mode.
 - **Hiding:** hide in fullscreen and when a window is maximized; double-click to drop to a thin line.
 - **Screen sharing:** the island is visible in Discord/OBS/Teams; hide it in shares and recordings if you prefer.
+- **Updates:** when a new version is out, the island tells you once; a download link in the tray menu and in Settings → About.
 - **Language:** Settings → General → Language (Automatic, Türkçe, English), the tray menu or first-run setup.
 - **Tab order:** drag tabs in the top menu to reorder, drop the ones you don't use on the box icon to hide them.
 
@@ -204,7 +205,8 @@ Windows Settings → Apps → NookBar → Uninstall. If you tick "Also delete my
 ## Privacy
 
 - Clipboard history and notifications are kept in memory only and deleted when the app exits. The clipboard hides itself while you broadcast or record.
-- The network is used only for features you turn on: lyrics (track name, artist and duration to LRCLIB), weather (the city you type to Open-Meteo), Discord (if enabled, Discord's sign-in server). No telemetry.
+- The network is used only for features you turn on: lyrics (track name, artist and duration to LRCLIB), weather (the city you type to Open-Meteo), Discord (if enabled, Discord's sign-in server), update check (only the latest version number is requested from GitHub; can be turned off in Settings → About). No telemetry.
+- After an unexpected close, a short error report stays only on your computer; nothing is sent automatically. If you like, Settings → About → Error reports opens the technical summary (version, Windows, error code) as an issue on GitHub.
 - For lyric sync, audio is measured in memory only and never recorded. Learned lyric corrections (song name and numbers) stay on your computer in `%APPDATA%\DinamikAdaNative`.
 - The Discord session is stored with Windows' per-user encryption (DPAPI); NookBar only connects to a local endpoint that really is Discord.
 - Wireless device batteries are read on your computer; for G HUB the other end is verified to really be G HUB.

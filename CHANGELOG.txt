@@ -4,6 +4,16 @@
 En yeni sürüm en üstte. Her yeni sürümde buraya madde eklenir.
 
 --------------------------------
+Sürüm 1.0.12
+--------------------------------
+  - Güncelleme bildirimi: yeni sürüm çıkınca adada bir kez haber verilir; tepsi menüsünün en üstünde "Yeni sürüm" ve
+    Ayarlar → Hakkında → Güncellemeler'de "Denetle" / "İndir". GitHub'a yalnızca son sürüm numarası sorulur; ayarlardan
+    kapatılabilir
+  - Hata raporu: NookBar beklenmedik şekilde kapanırsa bilgisayarında kısa bir rapor tutulur ve sonraki açılışta haber
+    verilir. Hiçbir şey kendiliğinden gönderilmez; Ayarlar → Hakkında → Hata raporları → "Rapor gönder" yalnızca teknik
+    özeti (sürüm, Windows, hata kodu) GitHub'da bir hata bildirimi olarak açar
+
+--------------------------------
 Sürüm 1.0.11
 --------------------------------
   - Yazı tipi seçimi: Ayarlar → Görünüm → Yazı tipi. Sistemdeki tüm yazı tipleri, aramalı ve fare tekerleğiyle kayan bir

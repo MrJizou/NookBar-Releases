@@ -161,6 +161,7 @@ NookBar ekranın üst ortasında durur ve iki biçimde gelir: **Ada** (varsayıl
 - **Açılma biçimi:** fareyle üzerine gelince ya da tıklayınca; imleci takip eden ekranda gösterme; yalnızca kenara gidince beliren mod.
 - **Gizleme:** tam ekranda ve büyütülmüş pencerede gizle; çift tıkla ince çizgiye indir.
 - **Ekran paylaşımı:** ada Discord/OBS/Teams'te görünür; istersen paylaşım ve kayıtlarda gizle.
+- **Güncellemeler:** yeni sürüm çıkınca ada bir kez haber verir; tepsi menüsünde ve Ayarlar → Hakkında'da indirme bağlantısı.
 - **Dil:** Ayarlar → Genel → Dil (Otomatik, Türkçe, English), tepsi menüsü ya da ilk kurulum.
 - **Sekme düzeni:** üst menüdeki sekmeleri sürükleyerek sırala, kullanmadıklarını kutuya bırakıp gizle.
 
@@ -204,7 +205,8 @@ Windows Ayarları → Uygulamalar → NookBar → Kaldır. Kaldırıcıda "Ayarl
 ## Gizlilik
 
 - Pano geçmişi ve bildirimler yalnızca bellekte tutulur, uygulama kapanınca silinir. Yayın/kayıt sırasında pano kendiliğinden gizlenir.
-- Ağ yalnızca açtığın özellikler için kullanılır: şarkı sözleri (LRCLIB'e parça adı, sanatçı ve süre), hava durumu (Open-Meteo'ya yazdığın şehir), Discord (açarsan, Discord'un oturum sunucusu). Telemetri yok.
+- Ağ yalnızca açtığın özellikler için kullanılır: şarkı sözleri (LRCLIB'e parça adı, sanatçı ve süre), hava durumu (Open-Meteo'ya yazdığın şehir), Discord (açarsan, Discord'un oturum sunucusu), güncelleme denetimi (GitHub'a yalnızca son sürüm numarası sorulur; Ayarlar → Hakkında'dan kapatılabilir). Telemetri yok.
+- Beklenmedik bir kapanışta kısa bir hata raporu yalnızca bilgisayarında tutulur; hiçbir şey kendiliğinden gönderilmez. İstersen Ayarlar → Hakkında → Hata raporları'ndan teknik özeti (sürüm, Windows, hata kodu) GitHub'da hata bildirimi olarak açabilirsin.
 - Söz senkronu için ses yalnızca bellekte ölçülür, kaydedilmez. Öğrenilen söz düzeltmeleri (şarkı adı ve sayılar) yalnızca bilgisayarında, `%APPDATA%\DinamikAdaNative` içinde tutulur.
 - Discord oturum bilgisi Windows'un kullanıcıya özel şifrelemesiyle (DPAPI) saklanır; NookBar yalnızca gerçekten Discord olan yerel bağlantıya bağlanır.
 - Kablosuz cihaz pilleri bilgisayarın içinde okunur; G HUB bağlantısında karşı tarafın gerçekten G HUB olduğu doğrulanır.

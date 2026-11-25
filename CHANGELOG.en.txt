@@ -4,6 +4,16 @@ NOOKBAR — CHANGELOG
 Newest version at the top. A line is added here with every new version.
 
 --------------------------------
+Version 1.0.12
+--------------------------------
+  - Update notification: when a new version is out, the island tells you once; "New version" at the top of the tray
+    menu and "Check" / "Download" in Settings → About → Updates. Only the latest version number is requested from
+    GitHub; it can be turned off in settings
+  - Error report: if NookBar closes unexpectedly, a short report is kept on your computer and you are told on the next
+    start. Nothing is sent automatically; Settings → About → Error reports → "Send report" opens only the technical summary
+    (version, Windows, error code) as an issue on GitHub
+
+--------------------------------
 Version 1.0.11
 --------------------------------
   - Font choice: Settings → Appearance → Font. All fonts installed on the system, in a searchable list that scrolls
