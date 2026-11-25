@@ -12,7 +12,7 @@
     A light, native Windows app with no third-party dependencies. <b>Early access</b> — free; your feedback matters a lot.
   </p>
   <p>
-    <a href="../../releases/latest"><b>Download</b></a> · <a href="CHANGELOG.txt">Release history</a> · <a href="../../issues/new/choose">Request device support</a>
+    <a href="../../releases/latest"><b>Download</b></a> · <a href="CHANGELOG.en.txt">Release history</a> · <a href="../../issues/new/choose">Request device support</a>
   </p>
   <p>
     <img src="docs/images/en/tanitim.png" alt="NookBar panel tour: Home, Lyrics, Clipboard, Shelf, System, Devices, Notifications" width="760" />
@@ -46,6 +46,7 @@ NookBar sits at the top center of the screen and comes in two styles: **Island**
 | While music plays: cover and lyric | While music plays: cover and lyric |
 
 - While music plays it becomes a slim indicator: the album cover (or the playing app's icon) on the left and the lyric next to it. The island widens and narrows with the current lyric phrase. During rhythm/instrumental gaps between lyrics, and for tracks without lyrics, dots that react to the audio appear. When no music plays, the clock sits in the center of the capsule.
+- While music plays, the closed island can show the visualizer, only the clock or **your own text** (one line, up to 32 characters, adjustable size) instead of lyrics. Text is centered on the island according to its width.
 - Hiding with `Ctrl + Alt + D` pulls the island into the edge like a water drop; showing it forms a drop at the edge that opens into the island.
 - A timer ring appears on the left; an unread notification counter, download indicator and battery capsule on the right.
 - 8 positions: top, bottom, corners and left/right edges (vertical capsule on the sides); multi-monitor and DPI aware.
@@ -138,6 +139,7 @@ NookBar sits at the top center of the screen and comes in two styles: **Island**
 </p>
 
 - 14 built-in themes, custom background/text/accent colors.
+- **Font:** pick any installed font (a searchable list that scrolls with the mouse wheel; every name is shown in its own font) or upload your own TTF/OTF file. An uploaded font is used only in NookBar and is not installed in Windows.
 - **Liquid Glass** (blurs and refracts the screen behind it), a liquid tab transition and an accent from the cover color.
 - If Windows "Transparency effects" are off or High Contrast is on, the body is drawn opaque; if "Animation effects" are off, transitions use the fastest setting.
 - Island size, corner roundness and animation duration are adjustable.

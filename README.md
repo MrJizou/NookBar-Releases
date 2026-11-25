@@ -46,6 +46,7 @@ NookBar ekranın üst ortasında durur ve iki biçimde gelir: **Ada** (varsayıl
 | Müzik çalarken: kapak ve söz | Müzik çalarken: kapak ve söz |
 
 - Müzik çalarken ince bir gösterge olur: solda albüm kapağı (ya da çalan uygulamanın simgesi), yanında şarkı sözü. Ada, çalan söz öbeğine göre genişleyip daralır. Sözler arasındaki ritim/enstrümantal boşlukta ve sözü olmayan parçalarda sesle oynayan noktalar görünür. Müzik çalmıyorsa saat kapsülün ortasında durur.
+- Müzik çalarken kapalı adada söz yerine görselleştirici, yalnızca saat ya da **kendi yazın** (tek satır, en çok 32 karakter, boyutu ayarlanır) gösterilebilir. Yazılar genişliklerine göre adanın ortasına hizalanır.
 - `Ctrl + Alt + D` ile gizlerken ada su damlası gibi kenara çekilir, gösterirken kenarda bir damla oluşup adaya açılır.
 - Solda zamanlayıcı halkası, sağda okunmamış bildirim sayacı, indirme göstergesi ve pil kapsülü çıkar.
 - 8 konum: üst, alt, köşeler ve sol/sağ kenar (kenarlarda dikey kapsül); çoklu ekran ve DPI desteği.
@@ -138,6 +139,7 @@ NookBar ekranın üst ortasında durur ve iki biçimde gelir: **Ada** (varsayıl
 </p>
 
 - 14 yerleşik tema, özel arka plan/yazı/vurgu renkleri.
+- **Yazı tipi:** sistemdeki yazı tiplerinden seç (aramalı, fare tekerleğiyle kayan liste; her ad kendi yazı tipiyle görünür) ya da kendi TTF/OTF dosyanı yükle. Yüklenen yazı tipi yalnızca NookBar'da kullanılır, Windows'a kurulmaz.
 - **Liquid Glass** cam efekti (arkadaki ekranı bulandırıp kırar), sıvı geçiş efekti, kapak renginden vurgu.
 - Windows'ta "Saydamlık efektleri" kapalıysa ya da Yüksek Karşıtlık açıksa gövde opak çizilir; "Animasyon efektleri" kapalıysa geçişler en hızlı değere iner.
 - Ada boyutu, köşe yuvarlaklığı ve animasyon süresi ayarlanabilir.

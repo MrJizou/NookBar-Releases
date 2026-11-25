@@ -1,0 +1,163 @@
+NOOKBAR — CHANGELOG
+================================
+
+Newest version at the top. A line is added here with every new version.
+
+--------------------------------
+Version 1.0.11
+--------------------------------
+  - Font choice: Settings → Appearance → Font. All fonts installed on the system, in a searchable list that scrolls
+    with the mouse wheel; every name is shown in its own font
+  - Upload your own font (TTF, OTF, TTC): the file is copied into NookBar's folder and used only in NookBar; it is not
+    installed in Windows
+  - New options for "On the compact island while playing": with "Off", the track's icon on the left and the clock in the
+    center; with "Custom text", show your own text on the closed island while music plays (one line, up to 32 characters,
+    10-18 px size)
+  - Text on the closed island (lyrics and custom text) is centered on the island according to its width
+
+--------------------------------
+Version 1.0.10
+--------------------------------
+  - Security: when connecting to Discord, NookBar verifies that the other end of the local connection really is the
+    Discord app; session data is never sent to another program that opens a connection with the same name
+  - The Discord diagnostic log (discord.log) is no longer written by default
+
+--------------------------------
+Version 1.0.9
+--------------------------------
+  - Discord call control no longer ships with a built-in app ID: Discord only allows the local connection on the app
+    owner's account, so you need to create your own Discord app and enter its Client ID in Settings → Media → Discord
+    (steps are on the settings screen). Without an ID NookBar does not connect to Discord and shows a one-time notice
+
+--------------------------------
+Version 1.0.8
+--------------------------------
+  - Redesigned settings window: category icons tied to the accent color, section headers with descriptions, segmented
+    choices for settings with few options, a position picker on a small screen mock-up and search in the sidebar
+    (Ctrl+F; word-start matching across all settings, results shown as live rows)
+  - Closed music indicator: a slim notch / island capsule (29 px tall as a notch, 30 px as an island); the album cover
+    (or app icon) on the left, only the lyric while lyrics are available, audio dots or bars when there are none. The
+    width follows the current lyric phrase. During rhythm/instrumental gaps between lyrics the dots appear, and the lyric
+    returns when the vocals come back
+  - Lyrics: phrases are split evenly by syllable count (no single leftover word), the current line fills from left to
+    right with the song, in-line alignment with the audio (vocal band) and per-song learned corrections (local cache),
+    lyric offset in Settings → Media. Default phrase length is 4 words
+  - Music card: an accent derived from the cover color (buttons, progress bar), on a wide card the cover/title/controls
+    on the left and the lyrics wheel on the right, long titles scroll, content longer than an hour shows h:mm:ss, the
+    playing app's icon when there is no cover
+  - Water drop animation when hiding and showing with Ctrl+Alt+D (can be turned off in Settings → Appearance → Glass and
+    motion)
+  - More pronounced Liquid Glass (closed indicator, panel and notification cards)
+  - Accessibility: an opaque body when Windows "Transparency effects" are off or High Contrast is on; when Windows
+    animation effects are off, spring transitions use the fastest setting and the drop animation and lyric fill are off
+  - Discord call control (optional, off by default): microphone/headphone buttons during a call, who is speaking, screen
+    share and camera shortcuts. You need to enter your own Discord app's Client ID in Settings → Media → Discord
+
+--------------------------------
+Version 1.0.7
+--------------------------------
+  - Razer BlackShark V3 / V3 Pro (2.4 GHz receiver, 1532:057A and 0577): battery percentage and charging state are shown.
+    Because the headset resets its connection when polled constantly, the battery is only queried on connect and every
+    5 minutes, showing the last value in between
+
+--------------------------------
+Version 1.0.6
+--------------------------------
+  - When the island is idle the clock is centered and slightly larger. When music stops the clock slides to the center
+    with a spring animation; it leaves room for other content while the battery, timer or privacy dots are visible. The
+    clock's visible digits are also centered vertically (moved up 1 pixel to offset the font's downward shift)
+  - In Chrome, Edge, Firefox, Brave, Opera and Vivaldi sessions, if the artist is empty the island stays in normal clock
+    mode. Live streams wrongly tagged as Music (such as Kick) no longer keep the media view open. Streams titled
+    "Watch Live on KICK" are hidden even if the artist is set or the browser ID is not recognized. Sources that provide an
+    artist/channel name, such as YouTube, and known music apps are still shown
+  - If there is no cover, or it matches the browser's app icon, a note icon is shown; the hidden session's old cover and
+    lyrics are cleared
+
+--------------------------------
+Version 1.0.5
+--------------------------------
+  - The heart on the music card and the Favorites card were removed (they were not useful without the Spotify
+    connection). The Favorites card option was also removed from settings
+
+--------------------------------
+Version 1.0.4
+--------------------------------
+  - The Spotify like connection was removed (Settings → Media → Spotify section, Client ID, "Connect to Spotify").
+    Because Spotify places strict user and company limits on apps that write to other people's accounts, this feature
+    could not work for everyone. The heart now only adds to the favorites list (kept on this computer only)
+
+--------------------------------
+Version 1.0.3
+--------------------------------
+  - Spotify like: the result of pressing the heart is now visible while the panel is open too. A short strip appears at
+    the bottom of the panel (green: added / removed, red: error and its reason, or how to connect if not connected).
+    Before, small notifications were never shown while the panel was open, so nothing appeared even on errors
+
+--------------------------------
+Version 1.0.2
+--------------------------------
+  - Interface language option: Turkish and English. Choose it in Settings → General → Language (Automatic = Windows
+    language; English if it is not Turkish), the tray menu → Language and the first setup step. The island, menus,
+    settings, help, notifications, dates and percentage formatting (%85 / 85%) follow the language; the installer also
+    opens in the Windows language
+  - The audio bars show a real audio spectrum: 16 frequency bands (FFT), no random jitter; bass on the left, treble on the
+    right
+  - Settings paths in help and setup were updated; the recording visibility description was corrected
+  - The startup error follows the English language choice
+  - Turkish and English READMEs
+  - Logitech device names match the G HUB cards; device type suffixes are hidden in the interface
+
+--------------------------------
+Version 1.0.1
+--------------------------------
+  - New name: NookBar (formerly Dinamik Ada). Your settings and notes are kept; a version installed under the old name is
+    removed automatically during the new install
+  - New app icon; the notification area icon is visible on light and dark taskbars and sharp at any display scale
+  - The installer is now NookBar-Setup-<version>.exe; the default recordings folder is Videos\NookBar
+  - The island is now visible in screen sharing (Discord, OBS, Teams), recordings and screenshots; you can hide it with
+    Settings → Notifications & privacy → "Hide in screen sharing and recordings"
+
+--------------------------------
+Version 1.0.0  (first release)
+--------------------------------
+A ground-up rewrite in C++ of the old Electron app (0.1.1).
+Starts faster and uses less memory and CPU.
+
+  - A transparent capsule island at the top; 8 positions, multi-monitor, spring animation
+  - Now playing music, lyrics, controls
+  - Timer, stopwatch, pomodoro, alarm
+  - Clipboard history and a file shelf (drag and drop)
+  - System tab: CPU/RAM/disk/network, volume and brightness, audio output picker
+  - Home cards, agenda, notes, calendar, reminders
+  - Bluetooth devices, Windows notifications
+  - Wireless device batteries in the Devices tab (battery percentage and charging state) for a wide range of Logitech,
+    Razer, SteelSeries, Corsair, HyperX, Sony INZONE, AirPods/Beats, Galaxy Buds and many other mice, keyboards,
+    headsets and controllers; with G HUB open, Logitech percentages come straight from G HUB. A sleeping device's last
+    value is shown faded with "Last seen: N min ago"
+  - Battery rings on the closed island for up to 3 chosen devices (green while charging, red below 20%)
+  - Microphone/camera usage dots
+  - Screen recording (with system audio and microphone, MP4)
+  - Vertical capsule on the left/right edge
+  - 14 themes, glass effect (blur + refraction), quick settings from the tray menu
+  - Volume with the mouse wheel over the closed island; Ctrl+Alt+Space opens/closes the panel; arrow keys switch tabs, Esc
+    closes
+  - Activity ends: a timer ring and a notification counter appear beside the closed island
+  - Download indicator: name and speed while a browser download runs, a notification when it finishes; Internet Download
+    Manager downloads too, with a Downloads tab and history
+  - Notification queue: cards are shown one by one, waiting ones are counted by a +N badge; alarms and reminders go first
+  - Shelf right-click → Share (Windows share window); double-click opens the file
+  - A draggable timer ring (60 min = one full turn, also adjustable with the wheel); type a duration into the timer
+  - "Now" card (time, date, week number, today's note); starting with Windows is delayed by 10 seconds
+  - Smooth animations (120 fps); a liquid wave animation on tab switches; all drives in the System tab
+  - A world globe: drag to rotate, zoom with the wheel to reveal cities, click a country/city for its weather, search by
+    typing, and it returns to your location when released
+  - Copies that look like a password/API key/verification code are hidden in the clipboard history (the eye button shows
+    them for 8 seconds); a clipboard "Hide" button; the clipboard hides itself while you broadcast or record
+  - Settings window: all settings in one place, with categories in the sidebar and Ctrl+Tab to switch
+  - The lyric on the compact island disappears when the song is paused
+  - Selected devices' batteries appear in a separate capsule to the right of the island, with device icons
+  - Side capsules (timer, notification, download, battery) and the clock tab also use the Liquid Glass look
+  - The battery indicator shows on events by default (connect, charge, below 20%); a low-battery device stays on the
+    island until plugged in ("Always show" can be chosen)
+  - A 5-step first-run setup and a "How to use" page
+  - "Changelog" in the tray menu opens the changelog

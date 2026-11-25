@@ -4,6 +4,17 @@
 En yeni sürüm en üstte. Her yeni sürümde buraya madde eklenir.
 
 --------------------------------
+Sürüm 1.0.11
+--------------------------------
+  - Yazı tipi seçimi: Ayarlar → Görünüm → Yazı tipi. Sistemdeki tüm yazı tipleri, aramalı ve fare tekerleğiyle kayan bir
+    listede, her ad kendi yazı tipiyle gösterilir
+  - Kendi yazı tipini yükleme (TTF, OTF, TTC): dosya NookBar'ın klasörüne kopyalanır ve yalnızca NookBar'da kullanılır,
+    Windows'a kurulmaz
+  - "Çalarken küçük adada" için yeni seçenekler: "Kapalı" seçiliyken solda parçanın simgesi ve ortada saat; "Özel yazı" ile
+    müzik çalarken kapalı adada kendi yazını göster (tek satır, en çok 32 karakter, 10-18 px boyut)
+  - Kapalı adadaki yazılar (söz ve özel yazı) genişliklerine göre adanın ortasına hizalanır
+
+--------------------------------
 Sürüm 1.0.10
 --------------------------------
   - Güvenlik: Discord'a bağlanırken yerel bağlantının karşı ucunun gerçekten Discord uygulaması olduğu doğrulanır;
