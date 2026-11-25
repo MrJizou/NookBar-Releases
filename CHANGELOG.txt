@@ -4,6 +4,20 @@
 En yeni sürüm en üstte. Her yeni sürümde buraya madde eklenir.
 
 --------------------------------
+Sürüm 1.0.14
+--------------------------------
+  - Boştaki ada: Ayarlar → Medya → "Boştayken küçük adada" ile müzik çalmıyorken saat ya da özel yazı gösterilebilir;
+    yanında başka bir şey yokken saat adanın ortasına kayar
+  - Şarkı sözleri: kelime öbeğine "Otomatik" seçeneği eklendi; adaya sığan satır bölünmeden gösterilir, sığmayan en az
+    parçaya bölünür. Sözlerin sonu eksik kalan kayıtlar, aynı şarkının daha eksiksiz kaydıyla tamamlanır; uzatılarak
+    söylenen satırlarda öbekler satırın süresine daha iyi yayılır; kelime zamanlı LRC kayıtları desteklenir
+  - Görselleştirici: bazı kulaklıklarda (açılışı 1 saniyeden uzun süren ses aygıtları) sistem sesi hiç yakalanamıyordu;
+    artık arka planda açılır, açılamazsa yeniden denenir, ses aygıtı değişince yeniden bağlanır. Müzik kartındaki
+    çubuklar kısaldı ve daha yumuşak hareket eder
+  - Konum: ada sağ köşelerdeyken pil, bildirim ve indirme kapsülleri adanın soluna, sol köşelerdeyken zamanlayıcı sağına
+    geçer (ekranın dışında kalmaz). Ada sol ya da sağ kenardayken pil halkaları adanın içinde gösterilir
+
+--------------------------------
 Sürüm 1.0.13
 --------------------------------
   - Medya görünümü ve saat 1.0.5'teki davranışa döndü: tarayıcı oturumları sanatçı adı olmasa da gösterilir, canlı

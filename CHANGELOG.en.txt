@@ -4,6 +4,21 @@ NOOKBAR — CHANGELOG
 Newest version at the top. A line is added here with every new version.
 
 --------------------------------
+Version 1.0.14
+--------------------------------
+  - Idle island: Settings → Media → "When idle, on the compact island" shows the clock or your custom text while no
+    media plays; the clock moves to the center when nothing else is next to it
+  - Lyrics: a new "Automatic" phrase option shows a line whole when it fits on the island and splits longer lines into as
+    few parts as possible. Records whose lyrics stop early are completed from a more complete record of the same song;
+    phrases spread better over lines that are sung slowly; word-timed LRC records are supported
+  - Visualizer: on some headsets (audio devices that take longer than a second to open) system audio could not be
+    captured at all; capture now opens in the background, retries if it fails and reconnects when the audio device
+    changes. The music card bars are shorter and move more smoothly
+  - Position: in the right corners the battery, notification and download capsules move to the left of the island, in
+    the left corners the timer moves to the right (they no longer go off screen). With the island on the left or right
+    edge, battery rings are shown inside the island
+
+--------------------------------
 Version 1.0.13
 --------------------------------
   - The media view and the clock are back to their 1.0.5 behavior: browser sessions are shown even without an artist
