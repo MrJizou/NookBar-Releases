@@ -4,6 +4,13 @@
 En yeni sürüm en üstte. Her yeni sürümde buraya madde eklenir.
 
 --------------------------------
+Sürüm 1.0.10
+--------------------------------
+  - Güvenlik: Discord'a bağlanırken yerel bağlantının karşı ucunun gerçekten Discord uygulaması olduğu doğrulanır;
+    aynı adla bağlantı açan başka bir programa oturum bilgisi gönderilmez
+  - Discord tanılama kaydı (discord.log) artık varsayılan olarak yazılmaz
+
+--------------------------------
 Sürüm 1.0.9
 --------------------------------
   - Discord çağrı kontrolü artık hazır bir uygulama kimliğiyle gelmiyor: Discord yerel bağlantıya yalnızca uygulama
