@@ -42,8 +42,11 @@ NookBar sits at the top center of the screen and comes in two styles: **Island**
 | :---: | :---: |
 | <img src="docs/images/en/stil-ada.png" alt="Island style" width="360" /> | <img src="docs/images/en/stil-centik.png" alt="Notch style" width="360" /> |
 | A floating capsule detached from the screen | A notch attached to the screen edge |
+| <img src="docs/images/en/muzik-ada.png" alt="Island while music plays" width="360" /> | <img src="docs/images/en/muzik-centik.png" alt="Notch while music plays" width="360" /> |
+| While music plays: cover and lyric | While music plays: cover and lyric |
 
-- While closed it shows the playing track's cover, audio bars or a synced lyric line (lyrics in phrases of 2, 3 or 4 words). When no music plays, the clock sits in the center of the capsule.
+- While music plays it becomes a slim indicator: the album cover (or the playing app's icon) on the left and the lyric next to it. The island widens and narrows with the current lyric phrase. During rhythm/instrumental gaps between lyrics, and for tracks without lyrics, dots that react to the audio appear. When no music plays, the clock sits in the center of the capsule.
+- Hiding with `Ctrl + Alt + D` pulls the island into the edge like a water drop; showing it forms a drop at the edge that opens into the island.
 - A timer ring appears on the left; an unread notification counter, download indicator and battery capsule on the right.
 - 8 positions: top, bottom, corners and left/right edges (vertical capsule on the sides); multi-monitor and DPI aware.
 - Quick volume: scroll the mouse wheel over the closed island.
@@ -56,8 +59,19 @@ NookBar sits at the top center of the screen and comes in two styles: **Island**
 
 - Playing track, cover art, progress bar, play/pause/skip controls.
 - **Real audio spectrum:** the bars follow system audio in 16 frequency bands (bass on the left, treble on the right); if audio can't be captured they fall back to an animation.
-- Synced lyrics: on the compact island, in the lyrics wheel on the music card and in the Lyrics tab; click a line and the song jumps there.
+- Synced lyrics: on the compact island, in the lyrics wheel on the music card and in the Lyrics tab; click a line and the song jumps there. The current line fills from left to right with the song.
+- **Lyric sync:** lyrics are split into balanced phrases by syllable count and aligned within each line to the vocal onsets in the audio; learned corrections are stored per song on your computer and applied from the first second the next time the song plays. Phrase length (2/3/4 words) and a lyric offset are in Settings → Media.
+- The music card takes an accent from the cover color; on a wide card the cover and controls sit on the left and the lyrics wheel on the right. Long titles scroll, and content longer than an hour shows hours in the time.
+
+<p align="center">
+  <img src="docs/images/en/ayarlar-medya.png" alt="Settings: Media" width="760" />
+</p>
 - Browser sources without an artist (e.g. live-stream sites) are not treated as music; the island stays in normal clock mode. Sources that give an artist/channel name, like YouTube, and known music apps are still shown.
+
+### Discord (optional)
+
+- Connects locally to the Discord desktop app: microphone/headphone buttons during a call, who is speaking, screen share and camera shortcuts. Message content is not read.
+- Off by default. Discord only allows the local connection on the app owner's account, so you need to create your own Discord app and enter its Client ID in Settings → Media → Discord (steps are on the settings screen).
 
 ### System
 
@@ -124,12 +138,14 @@ NookBar sits at the top center of the screen and comes in two styles: **Island**
 </p>
 
 - 14 built-in themes, custom background/text/accent colors.
-- **Liquid Glass** (blurs and refracts the screen behind it), a liquid tab transition and a glow from the cover color.
+- **Liquid Glass** (blurs and refracts the screen behind it), a liquid tab transition and an accent from the cover color.
+- If Windows "Transparency effects" are off or High Contrast is on, the body is drawn opaque; if "Animation effects" are off, transitions use the fastest setting.
 - Island size, corner roundness and animation duration are adjustable.
 
 ### More settings
 
-- **Shortcuts:** `Ctrl + Alt + D` shows/hides the island; `Ctrl + Alt + Space` opens/closes the panel; while open, ←/→ switch tabs and `Esc` closes. The settings window is fully usable with Tab/arrows/Space.
+- **Settings window:** a categorized sidebar, described sections, segmented choices for settings with few options, a position picker on a small screen mock-up and search across all settings (`Ctrl + F`).
+- **Shortcuts:** `Ctrl + Alt + D` shows/hides the island (water drop animation, can be turned off in Settings → Appearance); `Ctrl + Alt + Space` opens/closes the panel; while open, ←/→ switch tabs and `Esc` closes. The settings window is fully usable with Tab/arrows/Space.
 - **Open mode:** on hover or on click; follow the screen the cursor is on; a reveal-on-edge mode.
 - **Hiding:** hide in fullscreen and when a window is maximized; double-click to drop to a thin line.
 - **Screen sharing:** the island is visible in Discord/OBS/Teams; hide it in shares and recordings if you prefer.
@@ -176,7 +192,9 @@ Windows Settings → Apps → NookBar → Uninstall. If you tick "Also delete my
 ## Privacy
 
 - Clipboard history and notifications are kept in memory only and deleted when the app exits. The clipboard hides itself while you broadcast or record.
-- The network is used only for features you turn on: lyrics (LRCLIB), weather (Open-Meteo). No telemetry.
+- The network is used only for features you turn on: lyrics (track name, artist and duration to LRCLIB), weather (the city you type to Open-Meteo), Discord (if enabled, Discord's sign-in server). No telemetry.
+- For lyric sync, audio is measured in memory only and never recorded. Learned lyric corrections (song name and numbers) stay on your computer in `%APPDATA%\DinamikAdaNative`.
+- The Discord session is stored with Windows' per-user encryption (DPAPI); NookBar only connects to a local endpoint that really is Discord.
 - Wireless device batteries are read on your computer; for G HUB the other end is verified to really be G HUB.
 
 ## Troubleshooting

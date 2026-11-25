@@ -23,7 +23,7 @@
 
 - **Her şey tek yerde:** Müzik, bildirimler, cihaz pilleri, zamanlayıcı, pano, dosya rafı ve sistem bilgisi ekranın kenarında; ayrı pencere ya da uygulama açmak yok.
 - **Küçük başlar, gerektiğinde açılır:** Üstte durur; üzerine gel, açılır; fareyi çek, kapanır.
-- **Müzik kontrolü:** Çalan parçanın kapağı, gerçek ses spektrumuna göre oynayan çubuklar ve zamanlı şarkı sözleri adada.
+- **Müzik kontrolü:** Çalan parçanın kapağı, gerçek ses spektrumuna göre oynayan çubuklar ve sesle hizalanan zamanlı şarkı sözleri adada.
 - **Sistem bilgisi:** CPU, RAM, disk ve ağ grafikleri, ses ve parlaklık kaydırıcıları.
 - **Cihaz pilleri:** Kablosuz fare, klavye, kulaklık ve kolların pili; düşük pilde renkli uyarı. Logitech cihazları G HUB'daki adla görünür.
 - **Pano ve dosya rafı:** Kopyaladıklarını tek tıkla yeniden yapıştır; dosyaları adaya sürükleyip istediğin yere bırak.
@@ -42,8 +42,11 @@ NookBar ekranın üst ortasında durur ve iki biçimde gelir: **Ada** (varsayıl
 | :---: | :---: |
 | <img src="docs/images/stil-ada.png" alt="Ada biçimi" width="360" /> | <img src="docs/images/stil-centik.png" alt="Çentik biçimi" width="360" /> |
 | Ekrandan ayrık yüzen kapsül | Ekran kenarına bitişik çentik |
+| <img src="docs/images/muzik-ada.png" alt="Müzik çalarken ada" width="360" /> | <img src="docs/images/muzik-centik.png" alt="Müzik çalarken çentik" width="360" /> |
+| Müzik çalarken: kapak ve söz | Müzik çalarken: kapak ve söz |
 
-- Kapalıyken çalan parçanın kapağı, ses çubukları ya da zamanlı söz satırı (sözler 2, 3 veya 4 kelimelik öbeklerle) görünür. Müzik çalmıyorsa saat kapsülün ortasında durur.
+- Müzik çalarken ince bir gösterge olur: solda albüm kapağı (ya da çalan uygulamanın simgesi), yanında şarkı sözü. Ada, çalan söz öbeğine göre genişleyip daralır. Sözler arasındaki ritim/enstrümantal boşlukta ve sözü olmayan parçalarda sesle oynayan noktalar görünür. Müzik çalmıyorsa saat kapsülün ortasında durur.
+- `Ctrl + Alt + D` ile gizlerken ada su damlası gibi kenara çekilir, gösterirken kenarda bir damla oluşup adaya açılır.
 - Solda zamanlayıcı halkası, sağda okunmamış bildirim sayacı, indirme göstergesi ve pil kapsülü çıkar.
 - 8 konum: üst, alt, köşeler ve sol/sağ kenar (kenarlarda dikey kapsül); çoklu ekran ve DPI desteği.
 - Hızlı ses ayarı: kapalı adanın üzerinde fare tekerleği.
@@ -56,8 +59,19 @@ NookBar ekranın üst ortasında durur ve iki biçimde gelir: **Ada** (varsayıl
 
 - Çalan parça, kapak, ilerleme çubuğu, oynat/duraklat/atla kontrolleri.
 - **Gerçek ses spektrumu:** çubuklar sistem sesinden 16 frekans bandıyla çalışır (bas solda, tiz sağda); ses yakalanamazsa animasyona döner.
-- Zamanlı şarkı sözleri: küçük adada, müzik kartındaki söz çarkında ve Sözler sekmesinde; satıra tıklayınca şarkı oraya atlar.
+- Zamanlı şarkı sözleri: küçük adada, müzik kartındaki söz çarkında ve Sözler sekmesinde; satıra tıklayınca şarkı oraya atlar. Çalan satır şarkıyla birlikte soldan sağa dolar.
+- **Söz senkronu:** sözler hece sayısına göre dengeli öbeklere bölünür ve vokalin sesteki girişlerine göre satır içinde hizalanır; öğrenilen düzeltmeler şarkı başına bilgisayarında saklanır, aynı şarkı tekrar çalınınca ilk saniyeden uygulanır. Ayarlar → Medya'da öbek uzunluğu (2/3/4 kelime) ve söz kaydırma.
+- Müzik kartı kapak renginden vurgu alır; geniş kartta kapak ve kontroller solda, söz çarkı sağda. Uzun başlıklar kayar, bir saati aşan içerikte süre saatli gösterilir.
+
+<p align="center">
+  <img src="docs/images/ayarlar-medya.png" alt="Ayarlar: Medya" width="760" />
+</p>
 - Tarayıcıda sanatçısı olmayan yayınlar (ör. canlı yayın siteleri) müzik sayılmaz; ada normal saat modunda kalır. YouTube gibi sanatçı/kanal adı veren kaynaklar ve bilinen müzik uygulamaları gösterilmeye devam eder.
+
+### Discord (isteğe bağlı)
+
+- Discord masaüstü uygulamasına yerelden bağlanır: çağrıdayken mikrofon/kulaklık düğmeleri, konuşan kişi, ekran paylaşımı ve kamera kısayolları. Mesaj içeriği okunmaz.
+- Varsayılan olarak kapalıdır. Discord yerel bağlantıya yalnızca uygulama sahibinin hesabında izin verdiği için kendi Discord uygulamanı oluşturup Client ID'sini Ayarlar → Medya → Discord'a yazman gerekir (adımlar ayar ekranında).
 
 ### Sistem
 
@@ -124,12 +138,14 @@ NookBar ekranın üst ortasında durur ve iki biçimde gelir: **Ada** (varsayıl
 </p>
 
 - 14 yerleşik tema, özel arka plan/yazı/vurgu renkleri.
-- **Liquid Glass** cam efekti (arkadaki ekranı bulandırıp kırar), sıvı geçiş efekti, kapak renginden ışık.
+- **Liquid Glass** cam efekti (arkadaki ekranı bulandırıp kırar), sıvı geçiş efekti, kapak renginden vurgu.
+- Windows'ta "Saydamlık efektleri" kapalıysa ya da Yüksek Karşıtlık açıksa gövde opak çizilir; "Animasyon efektleri" kapalıysa geçişler en hızlı değere iner.
 - Ada boyutu, köşe yuvarlaklığı ve animasyon süresi ayarlanabilir.
 
 ### Daha fazla ayar
 
-- **Kısayollar:** `Ctrl + Alt + D` adayı gösterir/gizler; `Ctrl + Alt + Boşluk` paneli açar/kapatır; açıkken ←/→ sekme değiştirir, `Esc` kapatır. Ayarlar penceresi Tab/ok/Boşluk ile klavyeyle de kullanılır.
+- **Ayarlar penceresi:** kategorili sol menü, açıklamalı bölümler, az seçenekli ayarlar için segmentli seçim, küçük ekran maketi üzerinde konum seçici ve tüm ayarlar arasında arama (`Ctrl + F`).
+- **Kısayollar:** `Ctrl + Alt + D` adayı gösterir/gizler (su damlası animasyonu, Ayarlar → Görünüm'den kapatılabilir); `Ctrl + Alt + Boşluk` paneli açar/kapatır; açıkken ←/→ sekme değiştirir, `Esc` kapatır. Ayarlar penceresi Tab/ok/Boşluk ile klavyeyle de kullanılır.
 - **Açılma biçimi:** fareyle üzerine gelince ya da tıklayınca; imleci takip eden ekranda gösterme; yalnızca kenara gidince beliren mod.
 - **Gizleme:** tam ekranda ve büyütülmüş pencerede gizle; çift tıkla ince çizgiye indir.
 - **Ekran paylaşımı:** ada Discord/OBS/Teams'te görünür; istersen paylaşım ve kayıtlarda gizle.
@@ -176,7 +192,9 @@ Windows Ayarları → Uygulamalar → NookBar → Kaldır. Kaldırıcıda "Ayarl
 ## Gizlilik
 
 - Pano geçmişi ve bildirimler yalnızca bellekte tutulur, uygulama kapanınca silinir. Yayın/kayıt sırasında pano kendiliğinden gizlenir.
-- Ağ yalnızca açtığın özellikler için kullanılır: şarkı sözleri (LRCLIB), hava durumu (Open-Meteo). Telemetri yok.
+- Ağ yalnızca açtığın özellikler için kullanılır: şarkı sözleri (LRCLIB'e parça adı, sanatçı ve süre), hava durumu (Open-Meteo'ya yazdığın şehir), Discord (açarsan, Discord'un oturum sunucusu). Telemetri yok.
+- Söz senkronu için ses yalnızca bellekte ölçülür, kaydedilmez. Öğrenilen söz düzeltmeleri (şarkı adı ve sayılar) yalnızca bilgisayarında, `%APPDATA%\DinamikAdaNative` içinde tutulur.
+- Discord oturum bilgisi Windows'un kullanıcıya özel şifrelemesiyle (DPAPI) saklanır; NookBar yalnızca gerçekten Discord olan yerel bağlantıya bağlanır.
 - Kablosuz cihaz pilleri bilgisayarın içinde okunur; G HUB bağlantısında karşı tarafın gerçekten G HUB olduğu doğrulanır.
 
 ## Sorun giderme
