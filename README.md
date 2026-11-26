@@ -198,7 +198,7 @@ Bu uyarıları gizlemek yerine burada açıkça paylaşıyoruz:
 
 - Üç uyarıda da belirli bir tehdit adı ya da davranış belirtilmiyor. CrowdStrike'ınki %60 güvenle verilen otomatik (makine öğrenmesi) bir tahmin. NookBar henüz kod imzalı değil ve yeni bir dosya; bu tür otomatik sistemler böyle dosyaları daha sık işaretleyebiliyor.
 - 1.0.15 kurulum dosyasını [Hybrid Analysis](https://hybrid-analysis.com/sample/adc1d30348197c7614472a942ea135a2409f57f891a351a7f003ee54f3a08a5a)'te korumalı ortamda da çalıştırdık. Oradaki uyarıların çoğu kurulumun yaptığı işlerle ilgili: programı diske yazmak, "Windows ile başlat" seçeneğini kayıt defterine işlemek, eski "Dinamik Ada" kurulumunu temizlemek. Sitenin genel kararı hâlâ "Malicious"; oradaki 25 antivirüs motorundan tespit veren tek motor CrowdStrike.
-- 26.11.2026'da 1.0.15 için CrowdStrike ve SecureAge'e yanlış alarm bildirimi gönderdik. Rising'in bildirim adresine e-postamız ulaşmadı; başka bir yoldan deneyeceğiz. Yanıt geldikçe bu bölümü güncelleyeceğiz.
+- 26.11.2026'da CrowdStrike ve SecureAge'e hem 1.0.15 hem 1.0.16 için yanlış alarm bildirimi gönderdik. Rising'in bildirim adresine e-postamız ulaşmadı; başka bir yoldan deneyeceğiz. Yanıt geldikçe bu bölümü güncelleyeceğiz.
 - Kendi kararını vermen için raporların tamamı yukarıdaki bağlantılarda.
 
 İndirdiğin dosyanın aynı dosya olduğunu SHA-256 özetinden doğrulayabilirsin: `2be2e070ecb4067a8f0efa5ef98ccc28a744e95d9b6d2ac5029e36211793b16c`
