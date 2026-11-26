@@ -4,6 +4,21 @@ NOOKBAR — CHANGELOG
 Newest version at the top. A line is added here with every new version.
 
 --------------------------------
+Version 1.0.16
+--------------------------------
+  - Away spider web: when the keyboard and mouse sit idle for a while, dust and webs cover the compact island and a
+    spider drops down and swings like a pendulum; when you come back it climbs its thread and runs off. No web forms
+    while a video plays. Settings → Behavior → While away (on/off, 1-15 min)
+  - Ghost island over maximized windows: the island turns see-through under the pointer and clicks pass to the window
+    behind; hold Ctrl for the normal island
+  - Fullscreen detection only looks at the island's own screen: a fullscreen window on another screen no longer hides
+    the island, and maximized windows without a title bar don't count as fullscreen
+  - With "Hide clipboard and notifications during broadcast/recording" on, notifications don't show the sender or text
+  - Smoother animations: the screen copy for the glass look is taken in the background and frames are evenly timed
+  - Security and robustness: a broken settings file is backed up, settings are written to disk safely, the Discord
+    connection and network requests were tightened, and uninstall also removes temporary files
+
+--------------------------------
 Version 1.0.15
 --------------------------------
   - Game mode (on by default; Settings → Behavior → Hiding): while a fullscreen game runs, the screen isn't copied for

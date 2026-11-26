@@ -216,10 +216,12 @@ Windows Ayarları → Uygulamalar → NookBar → Kaldır. Kaldırıcıda "Ayarl
 
 ## Gizlilik
 
-- Pano geçmişi ve bildirimler yalnızca bellekte tutulur, uygulama kapanınca silinir. Yayın/kayıt sırasında pano kendiliğinden gizlenir.
-- Ağ yalnızca açtığın özellikler için kullanılır: şarkı sözleri (LRCLIB'e parça adı, sanatçı ve süre), hava durumu (Open-Meteo'ya yazdığın şehir), Discord (açarsan, Discord'un oturum sunucusu), güncelleme denetimi (GitHub'a yalnızca son sürüm numarası sorulur; Ayarlar → Hakkında'dan kapatılabilir). Telemetri yok.
+- Pano geçmişi ve bildirimler yalnızca bellekte tutulur, uygulama kapanınca silinir. Yayın/kayıt sırasında (OBS gibi bir uygulama ya da NookBar kaydı) pano ve bildirim metinleri kendiliğinden gizlenir. Discord/Teams ekran paylaşımı algılanamaz; onun için "Ekran paylaşımında ve kayıtlarda gizle" ayarını aç.
+- Ağ yalnızca şu özellikler için kullanılır: şarkı sözleri (varsayılan açık; çalan medyanın, tarayıcıdaki videolar dahil, adı, sanatçısı ve süresi LRCLIB'e gider; Ayarlar → Medya → Şarkı sözleri ile kapatılır), hava durumu (Open-Meteo'ya yazdığın şehir), Discord (açarsan, Discord'un oturum sunucusu), güncelleme denetimi (GitHub'a yalnızca son sürüm numarası sorulur; Ayarlar → Hakkında'dan kapatılabilir). Telemetri yok.
 - Beklenmedik bir kapanışta kısa bir hata raporu yalnızca bilgisayarında tutulur; hiçbir şey kendiliğinden gönderilmez. İstersen Ayarlar → Hakkında → Hata raporları'ndan teknik özeti (sürüm, Windows, hata kodu) GitHub'da hata bildirimi olarak açabilirsin.
 - Söz senkronu için ses yalnızca bellekte ölçülür, kaydedilmez. Öğrenilen söz düzeltmeleri (şarkı adı ve sayılar) yalnızca bilgisayarında, `%APPDATA%\DinamikAdaNative` içinde tutulur.
+- İndirme geçmişi (biten indirmelerin dosya adı ve yolu) de yalnızca bilgisayarında, aynı klasörde `downloads.json` içinde tutulur.
+- Hata raporları klasöründeki döküm dosyası (.dmp) çökme anındaki bellekten parçalar içerebilir; herkese açık bir hata bildirimine ekleme.
 - Discord oturum bilgisi Windows'un kullanıcıya özel şifrelemesiyle (DPAPI) saklanır; NookBar yalnızca gerçekten Discord olan yerel bağlantıya bağlanır.
 - Kablosuz cihaz pilleri bilgisayarın içinde okunur; G HUB bağlantısında karşı tarafın gerçekten G HUB olduğu doğrulanır.
 

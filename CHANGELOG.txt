@@ -4,6 +4,22 @@
 En yeni sürüm en üstte. Her yeni sürümde buraya madde eklenir.
 
 --------------------------------
+Sürüm 1.0.16
+--------------------------------
+  - Uzaktayken örümcek ağı: bir süre klavye ve fare kullanılmazsa kapalı adayı toz ve ağ sarar, bir örümcek iner ve
+    sarkaç gibi sallanır; dönünce ipine tırmanıp kaçar. Video oynarken ağ oluşmaz. Ayarlar → Davranış → Uzaktayken
+    (aç/kapa, 1-15 dk)
+  - Büyütülmüş pencerelerde hayalet ada: imleç gelince ada saydamlaşır ve tıklamalar arkadaki pencereye geçer;
+    Ctrl basılıyken ada normal davranır
+  - Tam ekran algılaması yalnızca adanın bulunduğu ekrana bakar: başka ekrandaki tam ekran pencere adayı gizlemez,
+    başlık çubuksuz büyütülmüş pencereler tam ekran sayılmaz
+  - "Yayın/kayıt sırasında panoyu ve bildirimleri gizle" açıksa yayın ya da ekran kaydı sürerken bildirimlerin
+    gönderen ve metni gösterilmez
+  - Animasyonlar daha akıcı: cam görünümünün ekran kopyası arka planda alınır, kare zamanlaması düzenli
+  - Güvenlik ve sağlamlık: bozuk ayar dosyası yedeklenir, ayarlar diske güvenle yazılır, Discord bağlantısı ve ağ
+    istekleri sıkılaştırıldı, kaldırma geçici dosyaları da siler
+
+--------------------------------
 Sürüm 1.0.15
 --------------------------------
   - Oyun modu (varsayılan açık; Ayarlar → Davranış → Gizleme): tam ekran bir oyun açıkken cam görünümü için ekran

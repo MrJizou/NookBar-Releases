@@ -216,10 +216,12 @@ Windows Settings → Apps → NookBar → Uninstall. If you tick "Also delete my
 
 ## Privacy
 
-- Clipboard history and notifications are kept in memory only and deleted when the app exits. The clipboard hides itself while you broadcast or record.
-- The network is used only for features you turn on: lyrics (track name, artist and duration to LRCLIB), weather (the city you type to Open-Meteo), Discord (if enabled, Discord's sign-in server), update check (only the latest version number is requested from GitHub; can be turned off in Settings → About). No telemetry.
+- Clipboard history and notifications are kept in memory only and deleted when the app exits. While you broadcast or record (an app like OBS or a NookBar recording), the clipboard and notification text hide themselves. Discord/Teams screen sharing can't be detected; for that, turn on "Hide in screen sharing and recordings".
+- The network is used only for these features: lyrics (on by default; the title, artist and duration of whatever is playing, browser videos included, go to LRCLIB; turn it off in Settings → Media → Lyrics), weather (the city you type to Open-Meteo), Discord (if enabled, Discord's sign-in server), update check (only the latest version number is requested from GitHub; can be turned off in Settings → About). No telemetry.
 - After an unexpected close, a short error report stays only on your computer; nothing is sent automatically. If you like, Settings → About → Error reports opens the technical summary (version, Windows, error code) as an issue on GitHub.
 - For lyric sync, audio is measured in memory only and never recorded. Learned lyric corrections (song name and numbers) stay on your computer in `%APPDATA%\DinamikAdaNative`.
+- Download history (file name and path of finished downloads) also stays on your computer, in `downloads.json` in the same folder.
+- The dump file (.dmp) in the error reports folder may contain pieces of memory from the moment of the crash; don't attach it to a public issue.
 - The Discord session is stored with Windows' per-user encryption (DPAPI); NookBar only connects to a local endpoint that really is Discord.
 - Wireless device batteries are read on your computer; for G HUB the other end is verified to really be G HUB.
 
