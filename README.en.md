@@ -190,6 +190,19 @@ Requires Windows 10 or 11 (x64).
 3. If **Smart App Control** (Windows Security → App & browser control) is on, unsigned apps may be blocked.
 4. On first launch a short wizard asks for language, position, appearance and home page.
 
+### Virus scan
+
+In the VirusTotal scan of 26 November 2026, 67 of 70 engines did not detect anything in `NookBar-Setup-1.0.15.exe` (including Microsoft, Kaspersky, ESET and BitDefender). 3 engines flagged it: CrowdStrike Falcon, Rising and SecureAge. Current result: [VirusTotal report](https://www.virustotal.com/gui/file/adc1d30348197c7614472a942ea135a2409f57f891a351a7f003ee54f3a08a5a).
+
+We'd rather show these flags openly than hide them:
+
+- None of the three names a specific threat or behavior. CrowdStrike's is an automated (machine learning) guess at 60% confidence. NookBar isn't code-signed yet and the file is new; automated systems like these flag such files more often.
+- We also ran the file in a sandbox on [Hybrid Analysis](https://hybrid-analysis.com/sample/adc1d30348197c7614472a942ea135a2409f57f891a351a7f003ee54f3a08a5a). Most flags there are about what the installer does: writing the program to disk, saving the "Start with Windows" choice in the registry, and cleaning up an old "Dinamik Ada" install. The site's overall verdict is still "Malicious"; of the 25 antivirus engines there, CrowdStrike is the only one that flags it.
+- On 26 November 2026 we sent false-positive reports to CrowdStrike and SecureAge. Our email to Rising's reporting address bounced; we'll try another way. We'll update this section as replies come in.
+- The full reports are at the links above, so you can judge for yourself.
+
+You can check that your download is the same file by its SHA-256 hash: `adc1d30348197c7614472a942ea135a2409f57f891a351a7f003ee54f3a08a5a`
+
 ## Quick start
 
 1. NookBar opens as a small island at the top center of your screen.

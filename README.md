@@ -190,6 +190,19 @@ Windows 10 ve 11 (x64) gerekir.
 3. **Akıllı Uygulama Denetimi** (Windows Güvenliği → Uygulama ve tarayıcı denetimi) açıksa imzasız uygulamalar engellenebilir.
 4. İlk açılışta kısa bir sihirbaz dili, konumu, görünümü ve ana sayfayı sorar.
 
+### Virüs taraması
+
+`NookBar-Setup-1.0.15.exe`, 26.11.2026 tarihli VirusTotal taramasında 70 motorun 67'sinde tespit almadı (Microsoft, Kaspersky, ESET, BitDefender dahil). 3 motor uyarı verdi: CrowdStrike Falcon, Rising ve SecureAge. Güncel sonuç: [VirusTotal raporu](https://www.virustotal.com/gui/file/adc1d30348197c7614472a942ea135a2409f57f891a351a7f003ee54f3a08a5a).
+
+Bu uyarıları gizlemek yerine burada açıkça paylaşıyoruz:
+
+- Üç uyarıda da belirli bir tehdit adı ya da davranış belirtilmiyor. CrowdStrike'ınki %60 güvenle verilen otomatik (makine öğrenmesi) bir tahmin. NookBar henüz kod imzalı değil ve yeni bir dosya; bu tür otomatik sistemler böyle dosyaları daha sık işaretleyebiliyor.
+- Dosyayı [Hybrid Analysis](https://hybrid-analysis.com/sample/adc1d30348197c7614472a942ea135a2409f57f891a351a7f003ee54f3a08a5a)'te korumalı ortamda da çalıştırdık. Oradaki uyarıların çoğu kurulumun yaptığı işlerle ilgili: programı diske yazmak, "Windows ile başlat" seçeneğini kayıt defterine işlemek, eski "Dinamik Ada" kurulumunu temizlemek. Sitenin genel kararı hâlâ "Malicious"; oradaki 25 antivirüs motorundan tespit veren tek motor CrowdStrike.
+- 26.11.2026'da CrowdStrike ve SecureAge'e yanlış alarm bildirimi gönderdik. Rising'in bildirim adresine e-postamız ulaşmadı; başka bir yoldan deneyeceğiz. Yanıt geldikçe bu bölümü güncelleyeceğiz.
+- Kendi kararını vermen için raporların tamamı yukarıdaki bağlantılarda.
+
+İndirdiğin dosyanın aynı dosya olduğunu SHA-256 özetinden doğrulayabilirsin: `adc1d30348197c7614472a942ea135a2409f57f891a351a7f003ee54f3a08a5a`
+
 ## Hızlı başlangıç
 
 1. NookBar ekranın üst ortasında küçük bir ada olarak açılır.
