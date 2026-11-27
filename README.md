@@ -192,16 +192,16 @@ Windows 10 ve 11 (x64) gerekir.
 
 ### Virüs taraması
 
-`NookBar-Setup-1.0.16.exe`, 27.11.2026 tarihli VirusTotal taramasında 69 motorun 66'sında tespit almadı (Kaspersky, ESET, BitDefender dahil). 3 motor uyarı verdi: CrowdStrike Falcon, Microsoft ve SecureAge. 26.11.2026'daki ilk taramada Microsoft temizdi, Rising uyarı veriyordu. Güncel sonuç: [VirusTotal raporu](https://www.virustotal.com/gui/file/2be2e070ecb4067a8f0efa5ef98ccc28a744e95d9b6d2ac5029e36211793b16c).
+`NookBar-Setup-1.0.17.exe`, 27.11.2026 tarihli VirusTotal taramasında 68 motorun 64'ünde tespit almadı (Kaspersky, ESET, BitDefender dahil). 4 motor uyarı verdi: CrowdStrike Falcon, Microsoft, Rising ve SecureAge; 1.0.16'yı işaretleyenler de bu motorlardı. Güncel sonuç: [VirusTotal raporu](https://www.virustotal.com/gui/file/614a8b2173a916fa027516eb9e3d85ff899eb640c48b8c7756aa36625c30fc54).
 
 Bu uyarıları gizlemek yerine burada açıkça paylaşıyoruz:
 
-- Üç uyarıda da belirli bir tehdit ya da davranış gösterilmiyor. CrowdStrike'ınki %60 güvenle verilen otomatik (makine öğrenmesi) bir tahmin; Microsoft'un uyarısı da adındaki `!ml` ekinin gösterdiği gibi makine öğrenmesi modelinden geliyor. NookBar henüz kod imzalı değil ve yeni bir dosya; bu tür otomatik sistemler böyle dosyaları daha sık işaretleyebiliyor.
+- Dört uyarıda da belirli bir tehdit ya da davranış gösterilmiyor. CrowdStrike'ınki %60 güvenle verilen otomatik (makine öğrenmesi) bir tahmin; Microsoft'un uyarısı da adındaki `!ml` ekinin gösterdiği gibi makine öğrenmesi modelinden geliyor, Rising'inki de yapay zekâ tabanlı bir tahmin. NookBar henüz kod imzalı değil ve yeni bir dosya; bu tür otomatik sistemler böyle dosyaları daha sık işaretleyebiliyor.
 - 1.0.15 kurulum dosyasını [Hybrid Analysis](https://hybrid-analysis.com/sample/adc1d30348197c7614472a942ea135a2409f57f891a351a7f003ee54f3a08a5a)'te korumalı ortamda da çalıştırdık. Oradaki uyarıların çoğu kurulumun yaptığı işlerle ilgili: programı diske yazmak, "Windows ile başlat" seçeneğini kayıt defterine işlemek, eski "Dinamik Ada" kurulumunu temizlemek. Sitenin genel kararı hâlâ "Malicious"; oradaki 25 antivirüs motorundan tespit veren tek motor CrowdStrike.
 - 26.11.2026'da CrowdStrike ve SecureAge'e hem 1.0.15 hem 1.0.16 için yanlış alarm bildirimi gönderdik. 27.11.2026'da 1.0.16'yı Microsoft'a da yanlış alarm olarak gönderdik; inceleme sürüyor. Rising'in bildirim adresine e-postamız ulaşmadı; başka bir yoldan deneyeceğiz. Yanıt geldikçe bu bölümü güncelleyeceğiz.
 - Kendi kararını vermen için raporların tamamı yukarıdaki bağlantılarda.
 
-İndirdiğin dosyanın aynı dosya olduğunu SHA-256 özetinden doğrulayabilirsin: `2be2e070ecb4067a8f0efa5ef98ccc28a744e95d9b6d2ac5029e36211793b16c`
+İndirdiğin dosyanın aynı dosya olduğunu SHA-256 özetinden doğrulayabilirsin: `614a8b2173a916fa027516eb9e3d85ff899eb640c48b8c7756aa36625c30fc54`
 
 ## Hızlı başlangıç
 
