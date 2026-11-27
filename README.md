@@ -23,7 +23,7 @@
 
 - **Her şey tek yerde:** Müzik, bildirimler, cihaz pilleri, zamanlayıcı, pano, dosya rafı ve sistem bilgisi ekranın kenarında; ayrı pencere ya da uygulama açmak yok.
 - **Küçük başlar, gerektiğinde açılır:** Üstte durur; üzerine gel, açılır; fareyi çek, kapanır.
-- **Müzik kontrolü:** Çalan parçanın kapağı, gerçek ses spektrumuna göre oynayan çubuklar ve sesle hizalanan zamanlı şarkı sözleri adada.
+- **Müzik kontrolü:** Çalan parçanın kapağı, gerçek ses spektrumuna göre oynayan çubuklar ve zamanlı şarkı sözleri adada.
 - **Sistem bilgisi:** CPU, RAM, disk ve ağ grafikleri, ses ve parlaklık kaydırıcıları.
 - **Cihaz pilleri:** Kablosuz fare, klavye, kulaklık ve kolların pili; düşük pilde renkli uyarı. Logitech cihazları G HUB'daki adla görünür.
 - **Pano ve dosya rafı:** Kopyaladıklarını tek tıkla yeniden yapıştır; dosyaları adaya sürükleyip istediğin yere bırak.
@@ -66,7 +66,7 @@ NookBar ekranın üst ortasında durur ve iki biçimde gelir: **Ada** (varsayıl
 - Çalan parça, kapak, ilerleme çubuğu, oynat/duraklat/atla kontrolleri.
 - **Gerçek ses spektrumu:** çubuklar sistem sesinden 16 frekans bandıyla çalışır (bas solda, tiz sağda); ses yakalanamazsa animasyona döner.
 - Zamanlı şarkı sözleri: küçük adada, müzik kartındaki söz çarkında ve Sözler sekmesinde; satıra tıklayınca şarkı oraya atlar. Çalan satır şarkıyla birlikte soldan sağa dolar.
-- **Söz senkronu:** sözler hece sayısına göre dengeli öbeklere bölünür ve vokalin sesteki girişlerine göre satır içinde hizalanır; öğrenilen düzeltmeler şarkı başına bilgisayarında saklanır, aynı şarkı tekrar çalınınca ilk saniyeden uygulanır. Ayarlar → Medya'da öbek uzunluğu (2/3/4 kelime) ve söz kaydırma.
+- **Söz senkronu:** sözler hece sayısına göre dengeli öbeklere bölünür ve satırın zamanlarına göre satır içinde ilerler; satır aralarındaki uzun ritim boşluklarında söz yerine ses noktaları görünür. Ayarlar → Medya'da öbek uzunluğu (Otomatik ya da 2/3/4 kelime) ve söz kaydırma.
 - Müzik kartı kapak renginden vurgu alır; geniş kartta kapak ve kontroller solda, söz çarkı sağda. Uzun başlıklar kayar, bir saati aşan içerikte süre saatli gösterilir.
 
 <p align="center">
@@ -149,7 +149,7 @@ NookBar ekranın üst ortasında durur ve iki biçimde gelir: **Ada** (varsayıl
   <img src="docs/images/ayarlar-yazitipi.png" alt="Ayarlar: yazı tipi seçici" width="760" />
 </p>
 
-- **Liquid Glass** cam efekti (arkadaki ekranı bulandırıp kırar), sıvı geçiş efekti, kapak renginden vurgu.
+- **Liquid Glass** cam efekti (arkadaki ekranı bulandırıp kırar; dış kenardaki parlak çizgi ayrıca kapatılabilir), sıvı geçiş efekti, kapak renginden vurgu.
 - Windows'ta "Saydamlık efektleri" kapalıysa ya da Yüksek Karşıtlık açıksa gövde opak çizilir; "Animasyon efektleri" kapalıysa geçişler en hızlı değere iner.
 - Ada boyutu, köşe yuvarlaklığı ve animasyon süresi ayarlanabilir.
 
@@ -158,7 +158,7 @@ NookBar ekranın üst ortasında durur ve iki biçimde gelir: **Ada** (varsayıl
 - **Ayarlar penceresi:** kategorili sol menü, açıklamalı bölümler, az seçenekli ayarlar için segmentli seçim, küçük ekran maketi üzerinde konum seçici ve tüm ayarlar arasında arama (`Ctrl + F`).
 - **Kısayollar:** `Ctrl + Alt + D` adayı gösterir/gizler (su damlası animasyonu, Ayarlar → Görünüm'den kapatılabilir); `Ctrl + Alt + Boşluk` paneli açar/kapatır; açıkken ←/→ sekme değiştirir, `Esc` kapatır. Ayarlar penceresi Tab/ok/Boşluk ile klavyeyle de kullanılır.
 - **Açılma biçimi:** fareyle üzerine gelince ya da tıklayınca; imleci takip eden ekranda gösterme; yalnızca kenara gidince beliren mod.
-- **Gizleme:** tam ekranda ve büyütülmüş pencerede gizle; çift tıkla ince çizgiye indir.
+- **Gizleme:** tam ekranda gizle; büyütülmüş pencerelerde hayalet ada (imleç gelince saydamlaşır, tıklamalar arkadaki pencereye geçer; Ctrl basılı tutunca ya da imleç yarım saniye üstünde bekleyince normal davranır); çift tıkla ince çizgiye indir.
 - **Ekran paylaşımı:** ada Discord/OBS/Teams'te görünür; istersen paylaşım ve kayıtlarda gizle.
 - **Güncellemeler:** yeni sürüm çıkınca ada bir kez haber verir; tepsi menüsünde ve Ayarlar → Hakkında'da indirme bağlantısı.
 - **Dil:** Ayarlar → Genel → Dil (Otomatik, Türkçe, English), tepsi menüsü ya da ilk kurulum.
@@ -217,9 +217,9 @@ Windows Ayarları → Uygulamalar → NookBar → Kaldır. Kaldırıcıda "Ayarl
 ## Gizlilik
 
 - Pano geçmişi ve bildirimler yalnızca bellekte tutulur, uygulama kapanınca silinir. Yayın/kayıt sırasında (OBS gibi bir uygulama ya da NookBar kaydı) pano ve bildirim metinleri kendiliğinden gizlenir. Discord/Teams ekran paylaşımı algılanamaz; onun için "Ekran paylaşımında ve kayıtlarda gizle" ayarını aç.
-- Ağ yalnızca şu özellikler için kullanılır: şarkı sözleri (varsayılan açık; çalan medyanın, tarayıcıdaki videolar dahil, adı, sanatçısı ve süresi LRCLIB'e gider; Ayarlar → Medya → Şarkı sözleri ile kapatılır), hava durumu (Open-Meteo'ya yazdığın şehir), Discord (açarsan, Discord'un oturum sunucusu), güncelleme denetimi (GitHub'a yalnızca son sürüm numarası sorulur; Ayarlar → Hakkında'dan kapatılabilir). Telemetri yok.
+- Ağ yalnızca şu özellikler için kullanılır: şarkı sözleri (varsayılan açık; çalan medyanın, tarayıcıdaki videolar dahil, adı, sanatçısı ve süresi LRCLIB'e gider; Ayarlar → Medya → Şarkı sözleri ile kapatılır), hava durumu (yazdığın şehir uygulamanın içindeki listeden bulunur, MET Norway'e yalnızca koordinatı gider; sıcaklık yakında havalimanı varsa oradaki son ölçümle düzeltilir, bunun için aviationweather.gov'a yalnızca yaklaşık 100 km'lik bölge kutusu gider; hava verisi: MET Norway, CC BY 4.0; havalimanı ölçümleri: NOAA, METAR), Discord (açarsan, Discord'un oturum sunucusu), güncelleme denetimi (GitHub'a yalnızca son sürüm numarası sorulur; Ayarlar → Hakkında'dan kapatılabilir). Telemetri yok.
 - Beklenmedik bir kapanışta kısa bir hata raporu yalnızca bilgisayarında tutulur; hiçbir şey kendiliğinden gönderilmez. İstersen Ayarlar → Hakkında → Hata raporları'ndan teknik özeti (sürüm, Windows, hata kodu) GitHub'da hata bildirimi olarak açabilirsin.
-- Söz senkronu için ses yalnızca bellekte ölçülür, kaydedilmez. Öğrenilen söz düzeltmeleri (şarkı adı ve sayılar) yalnızca bilgisayarında, `%APPDATA%\DinamikAdaNative` içinde tutulur.
+- Görselleştirici için sistem sesi yalnızca bellekte ölçülür, kaydedilmez.
 - İndirme geçmişi (biten indirmelerin dosya adı ve yolu) de yalnızca bilgisayarında, aynı klasörde `downloads.json` içinde tutulur.
 - Hata raporları klasöründeki döküm dosyası (.dmp) çökme anındaki bellekten parçalar içerebilir; herkese açık bir hata bildirimine ekleme.
 - Discord oturum bilgisi Windows'un kullanıcıya özel şifrelemesiyle (DPAPI) saklanır; NookBar yalnızca gerçekten Discord olan yerel bağlantıya bağlanır.

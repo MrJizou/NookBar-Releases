@@ -4,6 +4,26 @@
 En yeni sürüm en üstte. Her yeni sürümde buraya madde eklenir.
 
 --------------------------------
+Sürüm 1.0.17
+--------------------------------
+  - Hava durumu MET Norway'den alınır. Şehre 30 km içinde bir havalimanı varsa sıcaklık oradaki son ölçümle (METAR)
+    düzeltilir. Günün en düşük/en yüksek değerinde eksik ölçüm 0 °C sayılmaz
+  - Şehir arama uygulamanın içindeki listeden yapılır, internete gitmez: 81 il merkezi ve yabancı şehirlerin Türkçe
+    adları (Londra, Köln, Münih...)
+  - Dünya küresi: açıkken, özellikle müzik çalarken tıklamaların tutmaması düzeltildi. Küre daha az işlemci kullanır,
+    "Konumum" düğmesi kırpılmaz, İngilizce arayüzde ülke adları İngilizce
+  - Hayalet ada: imleç yarım saniye üstünde kalınca ada normal davranır (Ctrl basılıyken de)
+  - Ayarlar → Görünüm → Cam ve hareket → "Parlak kenar": camın dış kenarındaki beyaz çizgi kapatılabilir
+  - Görev çubuğu simgesinin menüsünde "Ayarlar"
+  - İmleci takip et: birden fazla ekranda ada imlecin bulunduğu ekrana geçer
+  - Küre aramasına ya da zamanlayıcı süresine yazarken imleç panelden çıkınca panel kapanmaz, basılan tuşlar kaybolmaz
+  - Yayın sırasında açık bildirim grubunda boş alan kalmaz
+  - İngilizce arayüzde kaymış ve eksik çeviriler düzeltildi (cihaz adları, indirme hızı, kayıt ve Discord hataları)
+  - Şarkı sözleri: bazı İngilizce kelimelerin hecesi doğru sayılır, öbekler satıra daha düzgün yayılır
+  - Ağ güvenliği: yalnızca HTTPS ve uygulamanın kullandığı sunucular; başka sunucuya yönlendirme ve iptal edilmiş
+    sertifika reddedilir. Discord'a bağlanmadan önce Discord'un dijital imzası doğrulanır
+
+--------------------------------
 Sürüm 1.0.16
 --------------------------------
   - Uzaktayken örümcek ağı: bir süre klavye ve fare kullanılmazsa kapalı adayı toz ve ağ sarar, bir örümcek iner ve

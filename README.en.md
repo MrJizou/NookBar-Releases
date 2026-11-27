@@ -66,7 +66,7 @@ NookBar sits at the top center of the screen and comes in two styles: **Island**
 - Playing track, cover art, progress bar, play/pause/skip controls.
 - **Real audio spectrum:** the bars follow system audio in 16 frequency bands (bass on the left, treble on the right); if audio can't be captured they fall back to an animation.
 - Synced lyrics: on the compact island, in the lyrics wheel on the music card and in the Lyrics tab; click a line and the song jumps there. The current line fills from left to right with the song.
-- **Lyric sync:** lyrics are split into balanced phrases by syllable count and aligned within each line to the vocal onsets in the audio; learned corrections are stored per song on your computer and applied from the first second the next time the song plays. Phrase length (2/3/4 words) and a lyric offset are in Settings → Media.
+- **Lyric sync:** lyrics are split into balanced phrases by syllable count and advance within each line by its timing; during long rhythm gaps between lines, audio dots replace the lyric. Phrase length (Automatic or 2/3/4 words) and a lyric offset are in Settings → Media.
 - The music card takes an accent from the cover color; on a wide card the cover and controls sit on the left and the lyrics wheel on the right. Long titles scroll, and content longer than an hour shows hours in the time.
 
 <p align="center">
@@ -149,7 +149,7 @@ NookBar sits at the top center of the screen and comes in two styles: **Island**
   <img src="docs/images/en/ayarlar-yazitipi.png" alt="Settings: font picker" width="760" />
 </p>
 
-- **Liquid Glass** (blurs and refracts the screen behind it), a liquid tab transition and an accent from the cover color.
+- **Liquid Glass** (blurs and refracts the screen behind it; the bright line around the edge can be turned off separately), a liquid tab transition and an accent from the cover color.
 - If Windows "Transparency effects" are off or High Contrast is on, the body is drawn opaque; if "Animation effects" are off, transitions use the fastest setting.
 - Island size, corner roundness and animation duration are adjustable.
 
@@ -158,7 +158,7 @@ NookBar sits at the top center of the screen and comes in two styles: **Island**
 - **Settings window:** a categorized sidebar, described sections, segmented choices for settings with few options, a position picker on a small screen mock-up and search across all settings (`Ctrl + F`).
 - **Shortcuts:** `Ctrl + Alt + D` shows/hides the island (water drop animation, can be turned off in Settings → Appearance); `Ctrl + Alt + Space` opens/closes the panel; while open, ←/→ switch tabs and `Esc` closes. The settings window is fully usable with Tab/arrows/Space.
 - **Open mode:** on hover or on click; follow the screen the cursor is on; a reveal-on-edge mode.
-- **Hiding:** hide in fullscreen and when a window is maximized; double-click to drop to a thin line.
+- **Hiding:** hide in fullscreen; a ghost island over maximized windows (it turns see-through under the cursor and clicks pass to the window behind; hold Ctrl or rest the cursor on it for half a second for the normal island); double-click to drop to a thin line.
 - **Screen sharing:** the island is visible in Discord/OBS/Teams; hide it in shares and recordings if you prefer.
 - **Updates:** when a new version is out, the island tells you once; a download link in the tray menu and in Settings → About.
 - **Language:** Settings → General → Language (Automatic, Türkçe, English), the tray menu or first-run setup.
@@ -217,9 +217,9 @@ Windows Settings → Apps → NookBar → Uninstall. If you tick "Also delete my
 ## Privacy
 
 - Clipboard history and notifications are kept in memory only and deleted when the app exits. While you broadcast or record (an app like OBS or a NookBar recording), the clipboard and notification text hide themselves. Discord/Teams screen sharing can't be detected; for that, turn on "Hide in screen sharing and recordings".
-- The network is used only for these features: lyrics (on by default; the title, artist and duration of whatever is playing, browser videos included, go to LRCLIB; turn it off in Settings → Media → Lyrics), weather (the city you type to Open-Meteo), Discord (if enabled, Discord's sign-in server), update check (only the latest version number is requested from GitHub; can be turned off in Settings → About). No telemetry.
+- The network is used only for these features: lyrics (on by default; the title, artist and duration of whatever is playing, browser videos included, go to LRCLIB; turn it off in Settings → Media → Lyrics), weather (the city you type is looked up in a list inside the app, and only its coordinates go to MET Norway; if there is an airport nearby, the temperature is corrected with its latest reading, for which only a box of about 100 km goes to aviationweather.gov; weather data: MET Norway, CC BY 4.0; airport readings: NOAA, METAR), Discord (if enabled, Discord's sign-in server), update check (only the latest version number is requested from GitHub; can be turned off in Settings → About). No telemetry.
 - After an unexpected close, a short error report stays only on your computer; nothing is sent automatically. If you like, Settings → About → Error reports opens the technical summary (version, Windows, error code) as an issue on GitHub.
-- For lyric sync, audio is measured in memory only and never recorded. Learned lyric corrections (song name and numbers) stay on your computer in `%APPDATA%\DinamikAdaNative`.
+- For the visualizer, system audio is measured in memory only and never recorded.
 - Download history (file name and path of finished downloads) also stays on your computer, in `downloads.json` in the same folder.
 - The dump file (.dmp) in the error reports folder may contain pieces of memory from the moment of the crash; don't attach it to a public issue.
 - The Discord session is stored with Windows' per-user encryption (DPAPI); NookBar only connects to a local endpoint that really is Discord.

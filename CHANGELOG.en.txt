@@ -4,6 +4,27 @@ NOOKBAR — CHANGELOG
 Newest version at the top. A line is added here with every new version.
 
 --------------------------------
+Version 1.0.17
+--------------------------------
+  - Weather comes from MET Norway. If there is an airport within 30 km of the city, the temperature is corrected with
+    its latest reading (METAR). A missing reading no longer counts as 0 °C in the day's low/high
+  - City search uses the list inside the app and doesn't go to the internet: all 81 Turkish provincial centres and
+    Turkish names of foreign cities (Londra, Köln, Münih...)
+  - World globe: clicks could stop registering while it was open, especially with music playing; fixed. The globe uses
+    less CPU, the "My location" button is no longer cut off, and country names are in English in the English UI
+  - Ghost island: resting the cursor on it for half a second gives the normal island (holding Ctrl still works)
+  - Settings → Appearance → Glass and motion → "Bright edge": the white line around the glass edge can be turned off
+  - "Settings" in the taskbar icon's menu
+  - Follow cursor: with several screens the island moves to the screen the cursor is on
+  - While typing in the globe search or a timer duration, the panel stays open when the cursor leaves it, so keys
+    aren't lost
+  - No empty space in an expanded notification group during a stream
+  - Shifted and missing English translations fixed (device names, download speed, recording and Discord errors)
+  - Lyrics: syllables of some English words are counted correctly, so phrases spread more evenly over a line
+  - Network security: HTTPS only, and only the servers the app uses; redirects to other servers and revoked
+    certificates are rejected. Discord's digital signature is checked before connecting to it
+
+--------------------------------
 Version 1.0.16
 --------------------------------
   - Away spider web: when the keyboard and mouse sit idle for a while, dust and webs cover the compact island and a
