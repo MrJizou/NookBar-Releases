@@ -192,13 +192,13 @@ Requires Windows 10 or 11 (x64).
 
 ### Virus scan
 
-In the VirusTotal scan of 26 November 2026, 67 of 70 engines did not detect anything in `NookBar-Setup-1.0.16.exe` (including Microsoft, Kaspersky, ESET and BitDefender). 3 engines flagged it: CrowdStrike Falcon, Rising and SecureAge (the same three as for 1.0.15). Current result: [VirusTotal report](https://www.virustotal.com/gui/file/2be2e070ecb4067a8f0efa5ef98ccc28a744e95d9b6d2ac5029e36211793b16c).
+In the VirusTotal scan of 27 November 2026, 66 of 69 engines did not detect anything in `NookBar-Setup-1.0.16.exe` (including Kaspersky, ESET and BitDefender). 3 engines flagged it: CrowdStrike Falcon, Microsoft and SecureAge. In the first scan on 26 November 2026 Microsoft found nothing and Rising flagged it. Current result: [VirusTotal report](https://www.virustotal.com/gui/file/2be2e070ecb4067a8f0efa5ef98ccc28a744e95d9b6d2ac5029e36211793b16c).
 
 We'd rather show these flags openly than hide them:
 
-- None of the three names a specific threat or behavior. CrowdStrike's is an automated (machine learning) guess at 60% confidence. NookBar isn't code-signed yet and the file is new; automated systems like these flag such files more often.
+- None of the three points to a specific threat or behavior. CrowdStrike's is an automated (machine learning) guess at 60% confidence; Microsoft's also comes from a machine learning model, as the `!ml` suffix in its name shows. NookBar isn't code-signed yet and the file is new; automated systems like these flag such files more often.
 - We also ran the 1.0.15 installer in a sandbox on [Hybrid Analysis](https://hybrid-analysis.com/sample/adc1d30348197c7614472a942ea135a2409f57f891a351a7f003ee54f3a08a5a). Most flags there are about what the installer does: writing the program to disk, saving the "Start with Windows" choice in the registry, and cleaning up an old "Dinamik Ada" install. The site's overall verdict is still "Malicious"; of the 25 antivirus engines there, CrowdStrike is the only one that flags it.
-- On 26 November 2026 we sent false-positive reports for both 1.0.15 and 1.0.16 to CrowdStrike and SecureAge. Our email to Rising's reporting address bounced; we'll try another way. We'll update this section as replies come in.
+- On 26 November 2026 we sent false-positive reports for both 1.0.15 and 1.0.16 to CrowdStrike and SecureAge. On 27 November 2026 we also submitted 1.0.16 to Microsoft as a false positive; the review is pending. Our email to Rising's reporting address bounced; we'll try another way. We'll update this section as replies come in.
 - The full reports are at the links above, so you can judge for yourself.
 
 You can check that your download is the same file by its SHA-256 hash: `2be2e070ecb4067a8f0efa5ef98ccc28a744e95d9b6d2ac5029e36211793b16c`
